@@ -1,447 +1,203 @@
-/* Se importan las fuentes */
-@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200;300;400;600;700&family=Yellowtail&display=swap');
+/* ================== ESTILOS GENERALES ================== */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fefefe;
+    color: #333;
+    scroll-behavior: smooth;
+}
 
-head
-<style>
-    .buscador {
-        margin: 20px auto;
-        max-width: 600px;
-        display: flex;
-        gap: 10px;
-        justify-content: center;
-    }
+h1, h2, h3 {
+    font-family: 'Arial Black', Arial, sans-serif;
+    margin: 0;
+}
 
-    .buscador input {
-        padding: 10px;
-        flex: 1;
-        border: 1px solid #ccc;
-        border-radius: 5px;
-    }
+.resaltado {
+    background-color: #ffeb3b;
+    color: #000;
+    font-weight: bold;
+}
 
-    .buscador button {
-        padding: 10px 16px;
-        background-color: #cc245c;
-        color: white;
-        border: none;
-        border-radius: 5px;
-        cursor: pointer;
-    }
+/* ================== BARRA DE NAVEGACIÓN ================== */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ff4081;
+    padding: 15px 30px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
 
-    .buscador button:hover {
-        background-color: #a91c4a;
-    }
-
-    .resaltado {
-        background-color: yellow;
-        font-weight: bold;
-    }
-</style>
-
-
-* {
-    font-family: "Titillium Web";
+header nav ul {
+    list-style: none;
+    display: flex;
     margin: 0;
     padding: 0;
 }
 
-html {
-    scroll-behavior: smooth;
+header nav ul li {
+    margin-right: 25px;
 }
 
-/* SECCIÓN INICIO */
-.inicio {
-    background: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 0, 0, 0.3)), url("img/fondo1.jpg");
-    background-size: cover;
-    background-position: center center;
-    color: #ffffff;
-}
-
-.inicio .contenido-seccion {
-    max-width: 1000px;
-    margin: auto;
-    text-align: center;
-    padding: 0 10px;
-}
-
-.inicio .contenido-seccion header {
-    padding: 30px;
-}
-
-
-
-.inicio .contenido-seccion header nav a {
-    display: block;
-    color: #121111;
+header nav ul li a {
     text-decoration: none;
-    margin-bottom: 10px;
+    color: #fff;
     font-weight: bold;
+    transition: color 0.3s;
+    font-size: 18px;
 }
 
-.inicio .contenido-seccion header .logo {
+header nav ul li a:hover {
+    color: #ffd740;
+}
+
+header div input[type="text"] {
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+}
+
+header div button {
+    padding: 5px 10px;
+    margin-left: 5px;
+    border: none;
+    background-color: #ffd740;
+    color: #333;
     font-weight: bold;
-    font-size: 2.5rem;
-    font-family: "Yellowtail";
-    text-shadow: 0 0 35px #cc00ff;
-}
-
-.inicio .contenido-seccion header .logo .color {
-    color: #121212;
-    font-family: "Yellowtail";
-}
-
-.inicio .contenido-seccion header .nav-bar {
-    position: fixed;
-    background-color: #000000;
-    font-size: 20px;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    line-height: 50px;
+    border-radius: 5px;
     cursor: pointer;
-    transition: .3s;
+    transition: background-color 0.3s;
 }
 
-.inicio .contenido-seccion header .nav-bar:hover {
-    box-shadow: 0 0 35px #f5f1f1;
+header div button:hover {
+    background-color: #ffc107;
 }
 
-.inicio .contenido-seccion .info {
-    padding-bottom: 130px;
-}
-
-.inicio .contenido-seccion .info h1 {
-    font-size: 3rem;
-    letter-spacing: 5px;
-}
-
-.inicio .contenido-seccion .info h2 {
-    font-weight: normal;
-    font-size: 20px;
-    margin-top: -10px;
+/* ================== TITULOS PRINCIPALES ================== */
+section > h1 {
+    font-size: 42px;
+    margin: 50px 0 30px;
+    color: #3f51b5;
+    text-transform: uppercase;
+    text-align: center;
     letter-spacing: 2px;
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.15);
 }
 
-.inicio .contenido-seccion .info .redes {
-    margin: 20px 0;
-}
-
-.inicio .contenido-seccion .info .redes a {
-    display: inline-block;
-    text-decoration: none;
-    background-color: #f3b9fc;
-    color: #000000;
-    border: 1px solid #000000;
-    border-radius: 50%;
-    width: 40px;
-    height: 40px;
-    line-height: 40px;
-    margin: 0 5px;
-    transition: .3s;
-}
-
-.inicio .contenido-seccion .info .redes a:hover {
-    color: #000000;
-    background-color: #000000;
-    box-shadow: 0 0 20px #ffffff;
-}
-
-.inicio .contenido-seccion .foto {
-    position: relative;
-}
-
-.inicio .contenido-seccion .foto img {
-    max-width: 200px;
-    border-radius: 50%;
-    border: 5px solid #000000;
-    position: absolute;
-    left: 50%;
-    top: -100px;
-    transform: translateX(-50%);
-}
-
-/* ESTILOS GENERALES */
-.titulo-seccion {
-    font-family: "Yellowtail";
-    font-size: 1.5rem;
-}
-
-/* SECCIÓN SOBRE MÍ */
-.sobremi {
-    background-color: #b389c1;
-    padding: 140px 0 100px 0;
-    text-align: center;
-}
-
-.sobremi .contenido-seccion h3 {
-    text-transform: uppercase;
-    font-size: 30px;
-}
-
-.sobremi .contenido-seccion .especial {
-    color: #000000;
-    font-weight: bold;
-    margin-top: 15px;
-}
-
-.sobremi .contenido-seccion p {
-    max-width: 700px;
-    margin: auto;
-    color: #000000;
-}
-
-.sobremi .contenido-seccion .fila {
-    display: flex;
-    margin-top: 30px;
-    justify-content: space-between;
-}
-
-.sobremi .contenido-seccion .fila .col {
-    width: 30%;
-}
-
-.sobremi .contenido-seccion .fila .col i {
-    color: #25452d;
-    display: inline-block;
-    width: 40px;
-    height: 40px;
-    border: 2px solid #7b5b00;
-    line-height: 40px;
-    border-radius: 50%;
-}
-
-/* SECCIÓN HABILIDADES */
-.habilidades {
-    padding: 80px 0 100px 0;
-    text-align: center;
-    background: linear-gradient(rgba(81, 80, 80, 0.3), rgba(44, 41, 41, 0.3)), url("img/fondo5.jpeg");
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: center;
-    color: #000000;
-}
-
-.habilidades .contenido-seccion {
+/* ================== CONTENEDORES DE PRODUCTO ================== */
+.container {
+    background: linear-gradient(135deg, #fbc2eb, #a6c1ee);
+    border-radius: 20px;
+    padding: 25px;
+    margin: 30px auto;
+    box-shadow: 0px 6px 20px rgba(0,0,0,0.15);
+    transition: transform 0.3s, box-shadow 0.3s;
     max-width: 1000px;
-    margin: auto;
-    padding: 0 10px;
-}
-
-.habilidades .contenido-seccion h3 {
-    text-transform: uppercase;
-    font-size: 30px;
-}
-
-.habilidades .contenido-seccion .fila {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 30px;
-}
-
-.habilidades .contenido-seccion .fila .col {
-    width: 47%;
-    text-align: left;
-}
-
-.habilidades .contenido-seccion .fila .col .cont-barra {
-    display: flex;
-    align-items: center;
-}
-
-.habilidades .contenido-seccion .fila .barra {
-    display: flex;
-    border: 1px solid #940253;
-    padding: 2px;
-    border-radius: 3px;
-    margin-right: 10px;
-}
-
-.habilidades .contenido-seccion .barra .e {
-    background-color: #363636;
-    width: 20px;
-    height: 30px;
-    margin-right: 2px;
-}
-
-/* SECCIÓN RESUMEN */
-.resumen {
-    background-color: #e6e6e6;
-    padding: 140px 0 100px 0;
     text-align: center;
 }
 
-.resumen .contenido-seccion {
-    max-width: 1000px;
-    margin: auto;
-    padding: 0 10px;
+.container:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 30px rgba(0,0,0,0.3);
 }
 
-.resumen .contenido-seccion h3 {
-    text-transform: uppercase;
-    font-size: 30px;
+.container h2 {
+    font-size: 26px;
+    margin-bottom: 15px;
+    color: #ff4081;
 }
 
-.resumen .contenido-seccion .info {
-    text-align: left;
-    display: flex;
-    justify-content: space-between;
-    margin: 30px;
-}
-
-.resumen .contenido-seccion .info .col {
-    width: 45%;
-}
-
-.resumen .contenido-seccion .info .col .titulo-seccion {
-    display: inline-block;
-    color: #940253;
-    font-weight: bold;
-    border: 2px solid #940253;
-    padding: 10px;
-}
-
-.resumen .contenido-seccion .info .col table {
-    margin-top: 30px;
-    border-collapse: collapse;
-}
-
-.resumen .contenido-seccion .info .col table .datos {
-    width: 40%;
-    border-bottom: 1px solid #bab9b9;
-}
-
-.resumen .contenido-seccion .info .col table h4 {
-    margin-top: 10px;
-}
-
-.resumen .contenido-seccion .info .col table h3 {
+.container h3 {
     font-size: 20px;
-    margin-bottom: 5px;
+    margin-top: 15px;
+    color: #ff5722;
 }
 
-.resumen .contenido-seccion .info .col table p {
-    font-size: 14px;
+.container p,
+.container li {
+    font-size: 16px;
+    color: #444;
+    line-height: 1.6;
 }
 
-.resumen .contenido-seccion .info .col table .promedio {
-    display: block;
-    color: #940253;
-    margin-top: 10px;
-    font-weight: bold;
+/* ================== IMÁGENES ================== */
+.image-container img {
+    width: 220px;
+    height: 220px;
+    object-fit: contain;
+    margin-top: 15px;
+    border-radius: 20px;
+    border: 3px solid #fff;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.2);
 }
 
-.resumen .contenido-seccion .info .col table .descripcion {
-    border-left: 1px solid #bab9b9;
-    padding-left: 20px;
+/* ================== COSMÉTICOS ================== */
+#cosmeticos {
+    padding: 50px 20px;
+    background: #fafafa;
 }
 
-/* SECCIÓN CONTACTO */
-.contacto {
-    background-color: #202020;
-    padding: 140px 0 100px 0;
-    color: #e6e6e6;
+#cosmeticos h1 {
+    font-size: 42px;
+    margin: 50px 0 30px;
+    color: #3f51b5;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.15);
+}
+
+#cosmeticos .container {
+    background: linear-gradient(135deg, #fbc2eb, #a6c1ee);
+    border-radius: 20px;
+    padding: 25px;
+    margin: 30px auto;
+    box-shadow: 0px 6px 20px rgba(0,0,0,0.15);
+    transition: transform 0.3s, box-shadow 0.3s;
+    max-width: 1000px;
     text-align: center;
 }
 
-.contacto .contenido-seccion {
+#cosmeticos .container:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 30px rgba(0,0,0,0.3);
+}
+
+#cosmeticos img {
+    width: 220px;
+    height: 220px;
+    border-radius: 20px;
+    object-fit: cover;
+    border: 3px solid #fff;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+}
+
+/* ================== CONTACTO ================== */
+#contacto {
+    background: linear-gradient(135deg, #a6c1ee, #fbc2eb);
+    padding: 60px 20px;
+    text-align: center;
+    border-radius: 20px;
+    margin: 40px auto;
     max-width: 1000px;
-    margin: auto;
-    padding: 0 10px;
+    box-shadow: 0px 6px 20px rgba(0,0,0,0.15);
 }
 
-.contacto .contenido-seccion h3 {
+#contacto h1 {
+    font-size: 38px;
+    margin-bottom: 20px;
+    color: #3f51b5;
     text-transform: uppercase;
-    font-size: 30px;
+    text-shadow: 1px 1px 4px rgba(0,0,0,0.2);
 }
 
-.contacto .contenido-seccion .fila {
-    display: flex;
-    justify-content: space-around;
+#contacto p {
+    font-size: 18px;
+    margin: 10px 0;
+    color: #333;
+    line-height: 1.8;
 }
-
-.contacto .contenido-seccion .fila .col {
-    margin-top: 50px;
-}
-
-.contacto .contenido-seccion .fila .col h2 {
-    color: #940253;
-}
-
-/* NAV: visibilidad dinámica */
-.nav {
-    display: none;
-}
-
-.nav.visible {
-    display: block;
-}
-
-/* RESPONSIVE DESIGN */
-@media screen and (max-width: 768px) {
-    .sobremi .contenido-seccion .fila,
-    .habilidades .contenido-seccion .fila,
-    .resumen .contenido-seccion .info,
-    .contacto .contenido-seccion .fila {
-        flex-direction: column;
-        gap: 20px;
-    }
-
-    .sobremi .contenido-seccion .fila .col,
-    .habilidades .contenido-seccion .fila .col,
-    .resumen .contenido-seccion .info .col,
-    .contacto .contenido-seccion .fila .col {
-        width: 100%;
-    }
-}
-
-
-<style>
-    .nav {
-        display: none;
-        background-color: #fff;
-        padding: 10px;
-        position: absolute;
-        top: 60px; /* ajusta según tu diseño */
-        left: 0;
-        width: 100%;
-        box-shadow: 0px 2px 5px rgba(0,0,0,0.2);
-    }
-
-    .nav.visible {
-        display: block;
-    }
-
-    .nav ul {
-        list-style: none;
-        padding: 0;
-        margin: 0;
-    }
-
-    .nav ul li {
-        padding: 10px;
-    }
-
-    .nav ul li a {
-        text-decoration: none;
-        color: #cc245c;
-        font-weight: bold;
-    }
-
-    /* Opcional: mostrar siempre en pantallas grandes */
-    @media (min-width: 768px) {
-        .nav {
-            display: block !important;
-            position: static;
-            background-color: transparent;
-            box-shadow: none;
-        }
-
-        .nav ul {
-            display: flex;
-            justify-content: flex-start;
-        }
-
-        .nav ul li {
-            margin-right: 20px;
-        }
-    }
-</style>
