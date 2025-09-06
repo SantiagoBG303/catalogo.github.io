@@ -1,2313 +1,430 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
-        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="estilo.css">
-    <title>PRODUCTOS SALUD ESMERALDA</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Catálogo de Productos</title>
+   <link rel="stylesheet" href="estilo.css">
 </head>
 <body>
-    <!-- ========== Start Section ========== -->
 
-    <!-- SECTI========== End Section ========== -->
-    <section class="inicio" id="inicio" style="background-color: #bf0644; padding: 40px 0;">
-    <div class="contenido-seccion">
-        <header>
-            
-            <nav id="nav" class="nav">
-                
-            </nav>
-            <div class="logo">
-                SALUD<span class="color">-CATÁLOGO</span>
-            </div>
-            <div class="info">
-                <h1>PRODUCTOS DE SALUD</h1>
-                <h2>ESMERALDA GUTIÉRREZ</h2>
-                <div class="redes">
-                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
-                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
-                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
-                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-                </div>
-            </div>
-            <div class="foto">
-                <img src="LOGO MARCA.png" alt="Logo de la marca">
-            </div>
-        </header>
+  <!-- Barra de navegación -->
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#liquidos">Líquidos</a></li>
+        <li><a href="#polvos">Polvos</a></li>
+        <li><a href="#cosmeticos">Cosméticos</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+    <!-- Buscador -->
+    <div>
+      <input type="text" id="busqueda" placeholder="Buscar producto...">
+      <button onclick="buscar()">Buscar</button>
     </div>
-</section>
+  </header>
 
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <title>Buscador Interno</title>
-    <style>
-        .buscador {
-            margin: 20px auto;
-            max-width: 600px;
-            display: flex;
-            gap: 10px;
-            justify-content: center;
+  <!-- ================== SECCIÓN LÍQUIDOS ================== -->
+  <section id="liquidos">
+    <h1>LÍQUIDOS</h1>
+
+    <!-- Producto X3 -->
+    <div class="container">
+      <h2>X3</h2>
+      <p><strong>Efecto fisiológico:</strong> Antioxidante y protector celular.</p>
+      <p><strong>Acción fisiológica:</strong> Contribuye a reducir el daño oxidativo en las células.</p>
+      <h3>Ingredientes:</h3>
+      <ul>
+        <li>Vitamina C</li>
+        <li>Vitamina E</li>
+        <li>Polifenoles</li>
+      </ul>
+      <p><strong>Posología:</strong> 10 ml al día.</p>
+      <p><strong>Registro Sanitario:</strong> RSAD12345-2019</p>
+      <div class="image-container">
+        <img src="X3.png" alt="X3">
+      </div>
+    </div>
+
+    <!-- Producto Bioarthry -->
+    <div class="container">
+      <h2>BIOARTHRY</h2>
+      <p><strong>Efecto fisiológico:</strong> Salud articular y ósea.</p>
+      <p><strong>Acción fisiológica:</strong> Ayuda a mantener la movilidad articular.</p>
+      <h3>Ingredientes:</h3>
+      <ul>
+        <li>Glucosamina</li>
+        <li>Condroitina</li>
+        <li>Colágeno hidrolizado</li>
+      </ul>
+      <p><strong>Posología:</strong> 20 ml diarios.</p>
+      <p><strong>Registro Sanitario:</strong> RSAD67890-2020</p>
+      <div class="image-container">
+        <img src="BIOARTHRY.png" alt="Bioarthry">
+      </div>
+    </div>
+
+    <!-- Producto DLR30 -->
+    <div class="container">
+      <h2>DLR30</h2>
+      <p><strong>Efecto fisiológico:</strong> Refuerza defensas y vitalidad.</p>
+      <p><strong>Acción fisiológica:</strong> Estimula el sistema inmune.</p>
+      <h3>Ingredientes:</h3>
+      <ul>
+        <li>Vitamina D</li>
+        <li>Vitamina C</li>
+        <li>Zinc</li>
+      </ul>
+      <p><strong>Posología:</strong> 15 ml diarios.</p>
+      <p><strong>Registro Sanitario:</strong> RSAD54321-2021</p>
+      <div class="image-container">
+        <img src="DLR30.png" alt="DLR30">
+      </div>
+    </div>
+
+    <!-- Producto Sinaldox -->
+    <div class="container">
+      <h2>SINALDOX</h2>
+      <p><strong>Efecto fisiológico:</strong> Ayuda a la salud hepática.</p>
+      <p><strong>Acción fisiológica:</strong> Facilita procesos de detoxificación.</p>
+      <h3>Ingredientes:</h3>
+      <ul>
+        <li>Silimarina</li>
+        <li>Vitamina B6</li>
+        <li>Ácido alfa lipoico</li>
+      </ul>
+      <p><strong>Posología:</strong> 10 ml diarios.</p>
+      <p><strong>Registro Sanitario:</strong> RSAD11223-2020</p>
+      <div class="image-container">
+        <img src="SINALDOX.png" alt="Sinaldox">
+      </div>
+    </div>
+
+    <!-- Producto Prosan -->
+    <div class="container">
+      <h2>PROSAN</h2>
+      <p><strong>Efecto fisiológico:</strong> Apoya la salud prostática.</p>
+      <p><strong>Acción fisiológica:</strong> Contribuye a la función urinaria.</p>
+      <h3>Ingredientes:</h3>
+      <ul>
+        <li>Saw Palmetto</li>
+        <li>Zinc</li>
+        <li>Lycopene</li>
+      </ul>
+      <p><strong>Posología:</strong> 15 ml diarios.</p>
+      <p><strong>Registro Sanitario:</strong> RSAD99887-2021</p>
+      <div class="image-container">
+        <img src="PROSAN.png" alt="Prosan">
+      </div>
+    </div>
+
+    <!-- Producto Braxim -->
+    <div class="container">
+      <h2>Braxim</h2>
+      <p><strong>Efecto fisiológico:</strong> Mejora circulación cerebral.</p>
+      <p><strong>Acción fisiológica:</strong> Favorece memoria y concentración.</p>
+      <h3>Ingredientes:</h3>
+      <ul>
+        <li>Ginkgo biloba</li>
+        <li>Magnesio</li>
+        <li>Vitamina B12</li>
+      </ul>
+      <p><strong>Posología:</strong> 10 ml diarios.</p>
+      <p><strong>Registro Sanitario:</strong> RSAD33445-2021</p>
+      <div class="image-container">
+        <img src="Braxim.png" alt="Braxim">
+      </div>
+    </div>
+
+    <!-- Producto Cal 3.0 -->
+    <div class="container">
+      <h2>Cal 3.0</h2>
+      <p><strong>Efecto fisiológico:</strong> Fortalece huesos y dientes.</p>
+      <p><strong>Acción fisiológica:</strong> Apoya la absorción de calcio.</p>
+      <h3>Ingredientes:</h3>
+      <ul>
+        <li>Calcio</li>
+        <li>Vitamina D</li>
+        <li>Magnesio</li>
+      </ul>
+      <p><strong>Posología:</strong> 20 ml diarios.</p>
+      <p><strong>Registro Sanitario:</strong> RSAD55667-2022</p>
+      <div class="image-container">
+        <img src="Cal30.png" alt="Cal 3.0">
+      </div>
+    </div>
+
+    <!-- Producto VitalLife -->
+    <div class="container">
+      <h2>VitalLife</h2>
+      <p><strong>Efecto fisiológico:</strong> Aporta energía y vitalidad.</p>
+      <p><strong>Acción fisiológica:</strong> Combina vitaminas y extractos naturales.</p>
+      <h3>Ingredientes:</h3>
+      <ul>
+        <li>Complejo B</li>
+        <li>Guaraná</li>
+        <li>Ginseng</li>
+      </ul>
+      <p><strong>Posología:</strong> 15 ml diarios.</p>
+      <p><strong>Registro Sanitario:</strong> RSAD77889-2021</p>
+      <div class="image-container">
+        <img src="VitalLife.png" alt="VitalLife">
+      </div>
+    </div>
+
+  </section>
+
+    <!-- ================== SECCIÓN POLVOS ================== -->
+  <section id="polvos">
+    <h1>POLVOS</h1>
+
+    <!-- Producto Colágeno Flex -->
+    <div class="container">
+      <h2>Colágeno Flex</h2>
+      <p><strong>Efecto fisiológico:</strong> Favorece la salud articular y la elasticidad de la piel.</p>
+      <p><strong>Acción fisiológica:</strong> Aporta colágeno hidrolizado de fácil absorción.</p>
+      <h3>Ingredientes:</h3>
+      <ul>
+        <li>Colágeno hidrolizado</li>
+        <li>Vitamina C</li>
+        <li>Magnesio</li>
+      </ul>
+      <p><strong>Posología:</strong> 1 sobre diario diluido en agua.</p>
+      <p><strong>Registro Sanitario:</strong> RSAD11234-2020</p>
+      <div class="image-container">
+        <img src="ColagenoFlex.png" alt="Colágeno Flex">
+      </div>
+    </div>
+
+    <!-- Producto NutriPro -->
+    <div class="container">
+      <h2>NutriPro</h2>
+      <p><strong>Efecto fisiológico:</strong> Complemento nutricional para energía y recuperación.</p>
+      <p><strong>Acción fisiológica:</strong> Contiene proteínas, vitaminas y minerales.</p>
+      <h3>Ingredientes:</h3>
+      <ul>
+        <li>Proteína de suero</li>
+        <li>Vitamina B12</li>
+        <li>Hierro</li>
+      </ul>
+      <p><strong>Posología:</strong> 2 cucharadas en 250 ml de agua o leche.</p>
+      <p><strong>Registro Sanitario:</strong> RSAD22345-2021</p>
+      <div class="image-container">
+        <img src="NutriPro.png" alt="NutriPro">
+      </div>
+    </div>
+
+    <!-- Producto EnerMax -->
+    <div class="container">
+      <h2>EnerMax</h2>
+      <p><strong>Efecto fisiológico:</strong> Incrementa la energía y reduce el cansancio.</p>
+      <p><strong>Acción fisiológica:</strong> Contiene aminoácidos esenciales y vitaminas.</p>
+      <h3>Ingredientes:</h3>
+      <ul>
+        <li>Aminoácidos de cadena ramificada (BCAA)</li>
+        <li>Vitamina B6</li>
+        <li>Vitamina B1</li>
+      </ul>
+      <p><strong>Posología:</strong> 1 medida antes del ejercicio.</p>
+      <p><strong>Registro Sanitario:</strong> RSAD33456-2021</p>
+      <div class="image-container">
+        <img src="EnerMax.png" alt="EnerMax">
+      </div>
+    </div>
+
+    <!-- Producto FibraPlus -->
+    <div class="container">
+      <h2>FibraPlus</h2>
+      <p><strong>Efecto fisiológico:</strong> Mejora la digestión y regula el tránsito intestinal.</p>
+      <p><strong>Acción fisiológica:</strong> Aporta fibras solubles e insolubles.</p>
+      <h3>Ingredientes:</h3>
+      <ul>
+        <li>Fibra de avena</li>
+        <li>Fibra de manzana</li>
+        <li>Inulina</li>
+      </ul>
+      <p><strong>Posología:</strong> 1 cucharada en 200 ml de agua.</p>
+      <p><strong>Registro Sanitario:</strong> RSAD44567-2020</p>
+      <div class="image-container">
+        <img src="FibraPlus.png" alt="FibraPlus">
+      </div>
+    </div>
+
+    <!-- Producto VitaSport -->
+    <div class="container">
+      <h2>VitaSport</h2>
+      <p><strong>Efecto fisiológico:</strong> Reposición de electrolitos y energía.</p>
+      <p><strong>Acción fisiológica:</strong> Ayuda en la hidratación y el rendimiento físico.</p>
+      <h3>Ingredientes:</h3>
+      <ul>
+        <li>Sodio</li>
+        <li>Potasio</li>
+        <li>Glucosa</li>
+      </ul>
+      <p><strong>Posología:</strong> 1 sobre en 500 ml de agua.</p>
+      <p><strong>Registro Sanitario:</strong> RSAD55678-2022</p>
+      <div class="image-container">
+        <img src="VitaSport.png" alt="VitaSport">
+      </div>
+    </div>
+
+  </section>
+
+   
+
+  <!-- ================== SCRIPT ================== -->
+  <script>
+    // Barra de navegación con desplazamiento suave
+    document.querySelectorAll("nav a").forEach(link => {
+      link.addEventListener("click", function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute("href"));
+        if (target) {
+          target.scrollIntoView({ behavior: "smooth", block: "start" });
         }
+      });
+    });
 
-        .buscador input {
-            padding: 10px;
-            flex: 1;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-        }
-
-        .buscador button {
-            padding: 10px 16px;
-            background-color: #cc245c;
-            color: white;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-
-        .buscador button:hover {
-            background-color: #a91c4a;
-        }
-
-        .resaltado {
-            background-color: yellow;
-            font-weight: bold;
-        }
-    </style>
-</head>
-<body>
-
-<!-- Buscador -->
-<div class="buscador">
-    <input type="text" id="busqueda" placeholder="Buscar en la página...">
-    <button onclick="buscar()">Buscar</button>
-</div>
-
-<!-- JavaScript -->
-<script>
+    // Función de búsqueda
     function buscar() {
-        const texto = document.getElementById("busqueda").value.toLowerCase().trim();
-        if (!texto) return;
+      const texto = document.getElementById("busqueda").value.toLowerCase().trim();
+      if (!texto) return;
 
-        // Eliminar resaltados anteriores
-        const marcas = document.querySelectorAll(".resaltado");
-        marcas.forEach(m => {
-            const parent = m.parentNode;
-            parent.replaceChild(document.createTextNode(m.textContent), m);
-            parent.normalize();
-        });
+      // Limpiar resaltados anteriores
+      const marcas = document.querySelectorAll(".resaltado");
+      marcas.forEach(m => {
+        const parent = m.parentNode;
+        parent.replaceChild(document.createTextNode(m.textContent), m);
+        parent.normalize();
+      });
 
-        let encontrado = false;
-        const elementos = document.querySelectorAll("section, p, h1, h2, h3, h4, h5, h6, li");
+      let encontrado = false;
+      const elementos = document.querySelectorAll("section, p, h1, h2, h3, h4, h5, h6, li");
 
-        elementos.forEach(el => {
-            const contenido = el.textContent.toLowerCase();
-            const index = contenido.indexOf(texto);
-            if (index !== -1 && !encontrado) {
-                const original = el.innerHTML;
-                const regex = new RegExp(`(${texto})`, "gi");
-                el.innerHTML = original.replace(regex, '<span class="resaltado">$1</span>');
-                el.scrollIntoView({ behavior: "smooth", block: "center" });
-                encontrado = true;
-            }
-        });
-
-        if (!encontrado) {
-            alert("No se encontró esa palabra en la página.");
+      elementos.forEach(el => {
+        const contenido = el.textContent.toLowerCase();
+        const index = contenido.indexOf(texto);
+        if (index !== -1 && !encontrado) {
+          // Resaltar y hacer scroll
+          const original = el.innerHTML;
+          const regex = new RegExp(`(${texto})`, "gi");
+          el.innerHTML = original.replace(regex, '<span class="resaltado">$1</span>');
+          el.scrollIntoView({ behavior: "smooth", block: "center" });
+          encontrado = true;
         }
+      });
+
+      if (!encontrado) {
+        alert("No se encontró esa palabra en la página.");
+      }
     }
-</script>
-
+  </script>
 </body>
 </html>
 
-              
-        
-    <!-- ========== End Section ========== -->
-    <!-- ========== SECCION DE HABILIDADES ========== -->
-    <section class="habilidades" id="habilidades" style="background-color: #f61f1f; padding: 20px; text-align: center;">
+<!-- ================== CATALOGO COSMÉTICOS ================== -->
+<section id="cosmeticos">
+  <h1>CATÁLOGO COSMÉTICOS</h1>
+  
+
+  <!-- GlowMelt -->
+  <div class="container">
+    <h2>GLOWMELT ¿PARA QUÉ SIRVE?</h2>
+    <div class="image-container">
+      <img src="GLOWMELT.png" alt="GlowMelt">
+    </div>
+    <p>
+      <strong>GlowMelt</strong> Formulado para mejorar la salud y apariencia de la piel desde el interior, combinando potentes ingredientes activos que favorecen la hidratación, elasticidad y luminosidad.
+    </p>
+  </div>
+
+  <!-- Makeup Collagen -->
+  <div class="container">
+    <h2>MAKEUP COLLAGEN ¿PARA QUÉ SIRVE?</h2>
+    <div class="image-container">
+      <img src="MAKEUP COLGEN.png" alt="Makeup Collagen">
+    </div>
+    <p>
+      <strong>Makeup Collagen</strong> Apoya la regeneración y firmeza de la piel, ayuda a reducir líneas de expresión y fortalece uñas y cabello.
+    </p>
+  </div>
+
+  <!-- AquaGlow -->
+  <div class="container">
+    <h2>AQUAGLOW ¿PARA QUÉ SIRVE?</h2>
+    <div class="image-container">
+      <img src="AQUA GLOW.png" alt="AquaGlow">
+    </div>
+    <p>
+      <strong>AquaGlow</strong> limpia profundamente tu piel sin resecarla, gracias a su contenido de extractos naturales.
+    </p>
+  </div>
+
+  <!-- VelvetFlow -->
+  <div class="container">
+    <h2>VELVETFLOW ¿PARA QUÉ SIRVE?</h2>
+    <div class="image-container">
+      <img src="VELVETGLOW.png" alt="VelvetFlow">
+    </div>
+    <p>
+      <strong>VelvetFlow</strong> es una innovadora fórmula que combina lo mejor de la biodiversidad colombiana con un avanzado complejo de aminoácidos.
+    </p>
+  </div>
+
+  <!-- GlowGlowth -->
+  <div class="container">
+    <h2>GLOWGLOWTH ¿PARA QUÉ SIRVE?</h2>
+    <div class="image-container">
+      <img src="GLOGLOWTH.png" alt="GlowGlowth">
+    </div>
+    <p>
+      <strong>GlowGlowth</strong> fortalece la fibra capilar e incrementa el crecimiento del cabello.
+    </p>
+  </div>
+
+  <!-- HerbaTherm -->
+  <div class="container">
+    <h2>HERBATHERM ¿PARA QUÉ SIRVE?</h2>
+    <div class="image-container">
+      <img src="HERBATHERM.png" alt="HerbaTherm">
+    </div>
+    <p>
+      <strong>HerbaTherm</strong> protege el cabello del daño causado por calor de planchas, rizadores o secadores.
+    </p>
+  </div>
+
+  <!-- VitaGlow -->
+  <div class="container">
+    <h2>VITAGLOW ¿PARA QUÉ SIRVE?</h2>
+    <div class="image-container">
+      <img src="VITAGLOW.png" alt="VitaGlow">
+    </div>
+    <p>
+      <strong>VitaGlow</strong> revitaliza profundamente el cabello desde la raíz hasta las puntas.
+    </p>
+  </div>
+
+  <!-- VividGlow -->
+  <div class="container">
+    <h2>VIVIDGLOW ¿PARA QUÉ SIRVE?</h2>
+    <div class="image-container">
+      <img src="VIVIDGLOW.png" alt="VividGlow">
+    </div>
+    <p>
+      <strong>VividGlow</strong> nutre profundamente el cabello desde la raíz hasta las puntas.
+    </p>
+  </div>
+</section>
+
+
+<!-- ================== SECCIÓN CONTACTO ================== -->
+<section id="contacto">
     <div class="contenido-seccion">
-        <h2 class="titulo-seccion">
-            LINEA DE POLVOS
-        </h2>
-        <div class="foto">
-            <img src="LOGO POLVOS.png" alt="Logo de la marca" style="width: 200px; height: 200px; border-radius: 50%; object-fit: cover; margin-top: 20px;">
-        </div>
+        <h2 class="titulo-seccion">CONTACTO</h2>
+        <p>Santiago</p>
+        <p>Teléfono: +57 312 345 6789</p>
+        <p>Correo electrónico: contacto@santiagoejemplo.com</p>
+        <p>Dirección: Bogotá, Colombia</p>
     </div>
 </section>
-
-   <section id="javascript" style="background-color:  #ffffff; padding: 20px;">
-    <h2>7 COLÁGENOS</h2>
-    <p>
-        El producto 7 Colágeno es un suplemento alimenticio diseñado para apoyar la salud integral del cuerpo, especialmente en lo relacionado con piel, articulaciones, cabello, uñas, huesos y tejidos. Su nombre se debe a que generalmente contiene una combinación de varios tipos de colágeno (como tipo I, II, III, etc.) o a que reúne 7 ingredientes clave que trabajan en conjunto para ofrecer beneficios completos.
-        <br><br>
-        Entre sus principales funciones están mejorar la elasticidad y firmeza de la piel, reducir arrugas, fortalecer uñas y cabello, proteger las articulaciones, regenerar tejidos y mantener los huesos fuertes. También es útil para personas que practican deporte, sufren desgaste articular o desean envejecer con mayor salud y vitalidad.
-        <br><br>
-        Además, muchos de estos productos incluyen componentes como vitamina C, ácido hialurónico, biotina y minerales, que potencian la absorción del colágeno y mejoran sus efectos. En resumen, 7 Colágeno es un aliado para mantener el cuerpo joven, fuerte y en buen estado desde adentro hacia afuera.
-    </p>
-</section>
-        <!-- Enlace a la documentación de JavaScript con una imagen como botón -->
-     <div style="background-color: #42d799; padding: 20px; text-align: center;">
-  <a href="https://www.alcarrito.com/7-colagenos-12-000mg-1kilo.html" target="_blank">
-    <img src="7 COLAGENOS.png" alt="7 Colágenos" style="display: block; margin: auto; width: 300px;">
-    <p style="color: #e60000; font-weight: bold; font-size: 18px; background-color: #ffffcc; padding: 5px; border-radius: 5px;">
-      ¡PRECIOS DEL MISMO PRODUCTO O SIMILAR EN OTRAS PAGINAS AQUI!!
-    </p>
-  </a>
-</div>
-
- <h2>ACIDO FOLICO LUTEINA</h2>
-    <p>
-        INGREDIENTES:
-
-Harina de coco, ácido fólico, luteína, omega 3, proteína aislado de arveja, cloruro de magnesio, quinua, amaranto, fosfato tribásico de calcio, inulina, sulfato de zinc, fructooligosacáridos, colina, vitamina A, C, E, K, D3, B2,B6, B12, cloruro de cobre, cloruro de cromo, sulfato ferroso, sulfato de manganeso, yoduro de potasio, selenito de sodio, glicina, leucina, valina, avena, pantotenato de calcio, calostro bovino, liofilizado de pato, ganoderma lucidum, prebióticos y probióticos.
-        <br><br>
-        BENEFICIOS:
-
-El ácido fólico es muy importante porque ayuda a prevenir algunos defectos de nacimiento graves del cerebro (anencefalia) y de la columna vertebral (espina bifida) del bebé.
-
-Colabora en el crecimiento de los tejidos y el trabajo celular.
-
-Un gran cofactor que contribuye al correcto metabolismo de las proteínas.
-
-Participa en la formación de glóbulos rojos, previniendo cuadros de dificil anemia.
-
-Ayuda en la producción de ADN.
-
-Propiedades anti oxidantes y anti inflamatorios naturale
-        <br><br>
-       IMPORTANTE
-
-Debido a que es dificil obtener el folato suficiente de los alimentos, las mujeres que están pensando en quedar embarazadas necesitan tomar suplementos de ácido fólico. El hecho de tomar la cantidad correcta de ácido fólico antes y durante el embarazo ayuda a prevenir ciertas anomalias del tubo neural, incluso la espina bifida. Tomar dosis más altas de ácido fólico antes de embarazarse y durante el primer trimestre puede disminuir las probabilidades de un aborto espontáneo. ÁCIDO FOLICO, LUTEINA Y OMEGA 3. VITAVID, aporta la cantidad necesaria cumpliendo las normativas internacionales y recomendaciones en salud. Reforzado con omega3, vitaminas y minerales, constituye un complemento de avanzada e indispensable durante este periodo, aportando además muy buenas propiedades antioxidantes.
-    </p>
-</section>
-        <!-- Enlace a la documentación de JavaScript con una imagen como botón -->
-     <div style="background-color: #42d799; padding: 20px; text-align: center;">
-  <a href="https://articulo.mercadolibre.com.co/MCO-1571589593-omega-3-alto-en-dha-con-luteina-y-zeaxantina-1400-mg-dha-400-_JM?m" target="_blank">
-    <img src="ACIDO FOLICO LUTEINA.png" alt="7 Colágenos" style="display: block; margin: auto; width: 300px;">
-    <p style="color: #e60000; font-weight: bold; font-size: 18px; background-color: #ffffcc; padding: 5px; border-radius: 5px;">
-     ¡PRECIOS DEL MISMO PRODUCTO O SIMILAR EN OTRAS PAGINAS AQUI!!
-    </p>
-  </a>
-</div>
- <h2>BIOZEMSURE</h2>
-    <p>
-       Biozmsure es un suplemento nutricional diseñado para apoyar diversas funciones del cuerpo mediante una combinación de vitaminas y minerales esenciales. Aunque la información específica sobre este producto es limitada, se puede inferir que contiene componentes como:
-
-    Vitaminas B6 y B12: Contribuyen al metabolismo energético normal y al funcionamiento adecuado del sistema nervioso.
-
-    Ácido fólico: Esencial para la formación de glóbulos rojos y el desarrollo celular, especialmente importante durante el embarazo.
-
-    Hierro: Ayuda en la formación de hemoglobina y en el transporte de oxígeno en el cuerpo.
-
-    Vitaminas C, D y E: Actúan como antioxidantes y apoyan el sistema inmunológico.
-
-Este suplemento podría ser beneficioso para personas que buscan mejorar su energía, fortalecer su sistema inmunológico y apoyar la salud general. Sin embargo, es importante consultar a un profesional de la salud antes de comenzar cualquier régimen de suplementos para asegurarse de que sea adecuado para sus necesidades individuales.
-    </p>
-</section>
-        <!-- Enlace a la documentación de JavaScript con una imagen como botón -->
-     <div style="background-color:  #42d799; padding: 20px; text-align: center;">
-  <a href="https://www.tiktok.com/discover/biozemsure-original-para-que-sirve" target="_blank">
-    <img src="BIOZENSURE.png"7 Colágenos" style="display: block; margin: auto; width: 300px;">
-    <p style="color: #e60000; font-weight: bold; font-size: 18px; background-color: #ffffcc; padding: 5px; border-radius: 5px;">
-      ¡OBSERVA AQUI MEDIANTE UN VIDEO QUE ES "
-    </p>
-  </a>
-</div>
-
-<h2>CALCIO CORAL</h2>
-    <p>
-       ¿Para qué sirve el Calcio Coral?
-
-    Fortalecer huesos y dientes
-
-        Aporta calcio biodisponible que ayuda a prevenir la osteoporosis y mantener la salud ósea.
-
-    Regular el pH del cuerpo
-
-        Se le atribuye un efecto alcalinizante, ayudando a neutralizar la acidez corporal.
-
-    Apoyo al sistema nervioso y muscular
-
-        El calcio es esencial para la contracción muscular y la transmisión nerviosa adecuada.
-
-    Minerales adicionales
-
-        El calcio coral también contiene magnesio, potasio y otros minerales en pequeñas cantidades que ayudan al equilibrio electrolítico y al metabolismo.
-
-    Salud cardiovascular
-
-        Contribuye a una presión arterial saludable y al buen funcionamiento del corazón, especialmente si viene acompañado de magnesio.
-    </p>
-<div style="background-color: #42d799; padding: 20px; text-align: center;">
-  <a href="https://www.miproducto.com.co/products/calcio-coral-marino-1200mg-caloprot-pote-1000g-pharmazen" target="_blank">
-    <img src="CALCIO CORAL.png" alt="Calcio Coral" style="display: block; margin: auto; width: 300px;">
-    <p style="color: #e60000; font-weight: bold; font-size: 18px; background-color: #ffffcc; padding: 5px; border-radius: 5px;">
-      ¡PRECIOS DEL MISMO PRODUCTO O SIMILAR EN OTRAS PAGINAS AQUI!!
-    </p>
-  </a>
-</div>
-
-
-<h2>CLORFIT</h2>
-    <p>
-       , Clorfit ofrece los siguientes beneficios:
-Productos Naturales+1Productos Naturales+1
-
-    Desintoxicación y oxigenación celular: Ayuda a eliminar toxinas y mejora la oxigenación de las células.
-    Productos Naturales+1Productos Naturales+1
-
-    Mejora de la digestión y efecto diurético: Favorece la digestión y actúa como un diurético natural.
-    Amazon+9Productos Naturales+9Productos Naturales+9
-
-    Fuente de vitaminas y minerales: Proporciona nutrientes esenciales que apoyan la circulación sanguínea, el intestino, los riñones y el hígado.
-    Productos Naturales+1Productos Naturales+1
-
-    Reducción de olores corporales: Contribuye a eliminar el mal aliento, flatulencias, pesadez y otros olores corporales desagradables.
-    Productos Naturales+1Productos Naturales+1
-
-    Desinflamación: Ayuda a reducir la inflamación del estómago y la vesícula biliar.
-    Productos Naturales+1Productos Naturales+1
-
-    Apoyo en la pérdida de peso: Puede ser útil en procesos de adelgazamiento.
-
-🧪 Ingredientes principales
-
-Clorfit contiene una combinación de ingredientes naturales, incluyendo:
-
-    Clorofila
-    Facebook+6Amazon+6Productos Naturales+6
-
-    Té verde
-    TikTok+4TikTok+4Productos Naturales+4
-
-    Tomquinua
-    OneClic+3Productos Naturales+3Productos Naturales+3
-
-    Acaiberry
-    Productos Naturales+1Productos Naturales+1
-
-    Amaranto
-    agroterra.com+4Productos Naturales+4Productos Naturales+4
-
-    Guanábana
-    TikTok+7Productos Naturales+7Productos Naturales+7
-
-    Uva
-
-    Mangostino
-    Productos Naturales+1Productos Naturales+1
-
-    Flor de Jamaica
-    Facebook+12Productos Naturales+12Productos Naturales+12
-
-    Manzana
-    Productos Naturales+1Productos Naturales+1
-
-    Berenjena
-    Productos Naturales+1Productos Naturales+1
-
-    Limón
-
-    Moringa
-    Productos Naturales+1Productos Naturales+1
-
-    Espirulina
-    Facebook+4Productos Naturales+4Productos Naturales+4
-
-🧴 Modo de uso
-
-Se recomienda disolver una copa del suplemento en un vaso de agua y tomarlo antes de cada comida.
-   <div style="background-color:#42d799; padding: 20px; text-align: center;">
-  <a href="https://oneclic.app/4343/CLORFIT+1000+gramos+-+Centro+Vida+Sana+-+Sangolqui.html" target="_blank">
-    <img src="CLORFIT.png" alt="Clorfit" style="display: block; margin: auto; width: 300px;">
-    <p style="color: #e60000; font-weight: bold; font-size: 18px; background-color: #ffffcc; padding: 5px; border-radius: 5px;">
-      ¡PRECIOS DEL MISMO PRODUCTO O SIMILAR EN OTRAS PAGINAS AQUI!!
-    </p>
-  </a>
-</div>
-
-<h2>COLAGENO MARINO</h2>
-    <p>
-       El colágeno marino ayuda a mejorar la apariencia y salud de la piel. Al ser una proteína fundamental en la estructura dérmica, estimula la producción natural de colágeno y elastina, lo que:
-
-    Reduce arrugas y líneas de expresión, al devolver elasticidad y firmeza a la piel.
-
-    Hidrata profundamente, combatiendo la resequedad y el aspecto opaco.
-
-    Mejora la textura de la piel, haciéndola más suave y uniforme.
-
-    Protege contra el daño causado por el sol y otros agentes externos.
-        <br><br>
-       El colágeno marino también cumple una función clave en el sistema musculoesquelético:
-
-    Lubrica y protege las articulaciones, ayudando a reducir la inflamación y el dolor, especialmente en personas con artritis o desgaste articular.
-
-    Fortalece los huesos, haciéndolos más resistentes a fracturas y enfermedades como la osteoporosis.
-
-    Aporta aminoácidos esenciales para reparar y mantener los músculos, siendo útil para deportistas o personas mayores que pierden masa muscular con la edad.
-        <br><br>
-       El colágeno marino también actúa en otras estructuras del cuerpo, favoreciendo:
-
-    Un crecimiento capilar más fuerte y saludable, previniendo la caída y el debilitamiento del cabello.
-
-    Uñas más resistentes, evitando que se quiebren o se vuelvan frágiles.
-
-    Cicatrización más rápida de heridas y regeneración celular, gracias a su rol en la producción de nuevas células y tejidos.
-    </p>
-
-    <div style="background-color: #42d799; padding: 20px; text-align: center;">
-  <a href="https://www.miproducto.com.co/products/colageno-marino-1200g-citrus-punch-x-1000grs-flexigen" target="_blank">
-    <img src="COLAGENO MARINO.png" alt="Colágeno Marino" style="display: block; margin: auto; width: 300px;">
-    <p style="color: #e60000; font-weight: bold; font-size: 18px; background-color: #ffffcc; padding: 5px; border-radius: 5px;">
-      ¡PRECIOS DEL MISMO PRODUCTO O SIMILAR EN OTRAS PAGINAS AQUI!!
-    </p>
-  </a>
-</div>
-
-
-<h2>COLAGENO VEGANO</h2>
-    <p>
-        ¿Qué es el colágeno vegano?
-
-El colágeno vegano es un suplemento diseñado para imitar los beneficios del colágeno animal, pero elaborado 100% con ingredientes de origen vegetal.
-No contiene colágeno en sí, ya que este solo se produce en animales, pero sí aporta nutrientes que estimulan la producción natural de colágeno en el cuerpo.
-        <br><br>
-      ¿Qué ingredientes contiene?
-
-Suele incluir una combinación de:
-
-    Vitaminas clave como la vitamina C (esencial para la síntesis de colágeno).
-
-    Aminoácidos derivados de plantas (como glicina, prolina).
-
-    Extractos de algas, frutas, semillas y antioxidantes.
-
-    Minerales como zinc y silicio, que ayudan a mantener la piel, cabello y uñas saludables.
-        <br><br>
-       ¿Para qué sirve?
-
-El colágeno vegano contribuye a:
-
-    Mejorar la piel, aportando firmeza y reduciendo arrugas.
-
-    Fortalecer cabello y uñas, haciéndolos más resistentes.
-
-    Cuidar articulaciones y huesos, al promover la producción de colágeno interno.
-    </p>
-
-   <div style="background-color:#42d799; padding: 20px; text-align: center;">
-  <a href="https://articulo.mercadolibre.com.co/MCO-2293960160-colageno-vegano-bio-zen-1000gr-_JM?matt_tool=37107417&matt_word=&matt_source=google&matt_campaign_id=22126928624&matt_ad_group_id=171342953497&matt_match_type=&matt_network=g&matt_device=c&matt_creative=729836846359&matt_keyword=&matt_ad_position=&matt_ad_type=pla&matt_merchant_id=531818465&matt_product_id=MCO2293960160&matt_product_partition_id=2389906731356&matt_target_id=pla-2389906731356&cq_src=google_ads&cq_cmp=22126928624&cq_net=g&cq_plt=gp&cq_med=pla&gad_source=1&gad_campaignid=22126928624&gclid=CjwKCAjw_pDBBhBMEiwAmY02NvGxKHNEIO0GUgvtU0VHJEHyBDmmg2WMWDYFyN7oKSy0uUAxU1Q4jRoC-P4QAvD_BwE" target="_blank">
-    <img src="COLAGENO VEGANO.png" alt="Colágeno Vegano" style="display: block; margin: auto; width: 300px;">
-    <p style="color: #e60000; font-weight: bold; font-size: 18px; background-color: #ffffcc; padding: 5px; border-radius: 5px;">
-      ¡PRECIOS DEL MISMO PRODUCTO O SIMILAR EN OTRAS PAGINAS AQUI!!
-    </p>
-  </a>
-</div>
-
-<h2>COLINA Y OMEGA</h2>
-<p>
-    ¿Qué es la colina y el omega?
-
-    La colina es un nutriente esencial similar a las vitaminas del grupo B, fundamental para el funcionamiento del cerebro, la memoria, el metabolismo y la salud celular. Por su parte, los ácidos grasos omega (como el omega-3 y omega-6) son grasas saludables que el cuerpo necesita para reducir la inflamación, mejorar la salud cardiovascular y apoyar el desarrollo cerebral.
-
-    <br><br>
-    ¿Qué beneficios aporta?
-
-    Estos dos nutrientes combinados pueden:
-
-    <ul>
-        <li>Mejorar la función cognitiva, la concentración y la memoria.</li>
-        <li>Favorecer el buen funcionamiento del sistema nervioso.</li>
-        <li>Reducir los niveles de colesterol y mejorar la salud del corazón.</li>
-        <li>Contribuir al desarrollo del cerebro en etapas tempranas y protegerlo durante el envejecimiento.</li>
-        <li>Apoyar la salud del hígado y el metabolismo de las grasas.</li>
-    </ul>
-</p>
-
-<div style="background-color:  #42d799; padding: 20px; text-align: center;">
-  <a href="https://www.amazon.com/-/es/Suplementos-omega-3-c%C3%A1psulas-Bitartrato-potencia/dp/B0D85V6X3G?th=1" target="_blank">
-    <img src="COLINA Y OMEGA.png" alt="Colina y Omega" style="display: block; margin: auto; width: 300px;">
-    <p style="color: #e60000; font-weight: bold; font-size: 18px; background-color: #ffffcc; padding: 5px; border-radius: 5px;">
-      ¡PRECIOS DEL MISMO PRODUCTO O SIMILAR EN OTRAS PAGINAS AQUI!!
-    </p>
-  </a>
-</div>
-
-<h2>FIBRA NATURAL</h2>
-<p>
-    ¿Qué es la fibra natural?
-
-    La fibra natural es un componente esencial de la dieta que proviene de fuentes vegetales como frutas, verduras, cereales y legumbres. Es fundamental para mejorar la digestión, regular el tránsito intestinal y promover la salud intestinal en general.
-
-    <br><br>
-    ¿Qué beneficios aporta?
-
-    La fibra natural ayuda a:
-
-    <ul>
-        <li>Mejorar la digestión y prevenir el estreñimiento.</li>
-        <li>Regular los niveles de azúcar en sangre y colesterol.</li>
-        <li>Favorecer la sensación de saciedad, ayudando en el control del peso.</li>
-        <li>Promover la salud del sistema digestivo y microbiota intestinal.</li>
-    </ul>
-</p>
-
-<div style="background-color: #42d799; padding: 20px; text-align: center;">
-  <a href="https://www.olimpica.com/digestar-fibra-natural-pote-x-300-gramos-7707232095295-742634/p" target="_blank">
-    <img src="FIBRA NATURAL.png" alt="Fibra Natural" style="display: block; margin: auto; width: 300px;">
-    <p style="color: #e60000; font-weight: bold; font-size: 18px; background-color: #ffffcc; padding: 5px; border-radius: 5px;">
-      ¡PRECIOS DEL MISMO PRODUCTO O SIMILAR EN OTRAS PAGINAS AQUI!!
-    </p>
-  </a>
-</div>
-
-<h2>GLUTATION</h2>
-<p>
-    ¿Qué es el glutation?
-
-    El glutation es un antioxidante natural producido por el cuerpo que ayuda a proteger las células del daño causado por los radicales libres y el estrés oxidativo. Además, participa en la desintoxicación del organismo y apoya el sistema inmunológico.
-
-    <br><br>
-    ¿Qué beneficios aporta?
-
-    El glutation contribuye a:
-
-    <ul>
-        <li>Proteger las células y tejidos del daño oxidativo.</li>
-        <li>Mejorar la función del sistema inmunológico.</li>
-        <li>Apoyar la desintoxicación natural del cuerpo.</li>
-        <li>Favorecer la salud de la piel y el envejecimiento saludable.</li>
-    </ul>
-</p>
-
-<div style="background-color:#42d799; padding: 20px; text-align: center;">
-  <a href="https://farmawell.co/producto/gluthallen-glutation-30-capsulas-allen-pharma/" target="_blank">
-    <img src="GLUTATION.png" alt="Glutation" style="display: block; margin: auto; width: 300px;">
-    <p style="color: #e60000; font-weight: bold; font-size: 18px; background-color: #ffffcc; padding: 5px; border-radius: 5px;">
-      ¡PRECIOS DEL MISMO PRODUCTO O SIMILAR EN OTRAS PAGINAS AQUI!!
-    </p>
-  </a>
-</div>
-
-<h2>MULTIKIDS</h2>
-<p>
-    ¿Qué es MultiKids?
-
-    MultiKids es un suplemento vitamínico diseñado especialmente para niños, que ayuda a cubrir las necesidades nutricionales esenciales para un crecimiento y desarrollo saludable. Contiene una combinación de vitaminas y minerales que apoyan el sistema inmunológico, la energía y el bienestar general de los más pequeños.
-
-    <br><br>
-    ¿Qué beneficios aporta?
-
-    MultiKids contribuye a:
-
-    <ul>
-        <li>Fortalecer el sistema inmunológico infantil.</li>
-        <li>Apoyar el desarrollo óseo y muscular.</li>
-        <li>Mejorar los niveles de energía y concentración.</li>
-        <li>Promover un crecimiento saludable y equilibrado.</li>
-    </ul>
-</p>
-
-<div style="background-color:#42d799; padding: 20px; text-align: center;">
-  <a href="https://articulo.mercadolibre.com.co/MCO-2629814494-multi-kids-x3-jarabe-nutriplan-_JM" target="_blank">
-    <img src="MULTIKIDS.png" alt="MultiKids" style="display: block; margin: auto; width: 300px;">
-    <p style="color: #e60000; font-weight: bold; font-size: 18px; background-color: #ffffcc; padding: 5px; border-radius: 5px;">
-      ¡PRECIOS DEL MISMO PRODUCTO O SIMILAR EN OTRAS PAGINAS AQUI!!
-    </p>
-  </a>
-</div>
-
-<h2>PROBIÓTICOS Y PREBIÓTICOS</h2>
-<p>
-    ¿Qué son los probióticos y prebióticos?
-
-    Los probióticos son microorganismos vivos que, cuando se consumen en cantidades adecuadas, aportan beneficios a la salud intestinal y al equilibrio de la microbiota. Los prebióticos, por otro lado, son fibras y compuestos no digeribles que sirven de alimento para estos microorganismos beneficiosos, favoreciendo su crecimiento y actividad.
-
-    <br><br>
-    ¿Qué beneficios aportan?
-
-    Los probióticos y prebióticos ayudan a:
-
-    <ul>
-        <li>Mejorar la digestión y la absorción de nutrientes.</li>
-        <li>Fortalecer el sistema inmunológico.</li>
-        <li>Reducir problemas digestivos como el estreñimiento o la diarrea.</li>
-        <li>Promover un equilibrio saludable de la flora intestinal.</li>
-    </ul>
-</p>
-
-<div style="background-color:#42d799; padding: 20px; text-align: center;">
-  <a href="https://www.falabella.com.co/falabella-co/product/132348583/PROBIOTICOS-Y-PREBIOTICOS-1000G-BIOLITE/132348584" target="_blank">
-    <img src="PROBIOTICOS Y PREBIOTICOS.png" alt="Probióticos y Prebióticos" style="display: block; margin: auto; width: 300px;">
-    <p style="color: #e60000; font-weight: bold; font-size: 18px; background-color: #ffffcc; padding: 5px; border-radius: 5px;">
-      ¡PRECIOS DEL MISMO PRODUCTO O SIMILAR EN OTRAS PAGINAS AQUI!!
-    </p>
-  </a>
-</div>
-
-<h2>PROTEÍNA VEGANA</h2>
-<p>
-    ¿Qué es la proteína vegana?
-
-    La proteína vegana es un suplemento elaborado a partir de fuentes vegetales, como guisantes, arroz, semillas y otras plantas, diseñado para aportar una fuente completa y equilibrada de aminoácidos esenciales sin ingredientes de origen animal.
-
-    <br><br>
-    ¿Qué beneficios aporta?
-
-    La proteína vegana ayuda a:
-
-    <ul>
-        <li>Promover el desarrollo y reparación muscular.</li>
-        <li>Ser una opción saludable y sostenible para personas con dietas veganas o vegetarianas.</li>
-        <li>Apoyar la digestión, ya que suele ser baja en alérgenos y grasas saturadas.</li>
-        <li>Contribuir al mantenimiento de una dieta balanceada y rica en nutrientes.</li>
-    </ul>
-</p>
-
-<div style="background-color: #42d799; padding: 20px; text-align: center;">
-  <a href="https://www.locatelcolombia.com/7709430732927-proteina-effekt-sabor-vainilla-x-945g/p" target="_blank">
-    <img src="PROTEINA VEGANA.png" alt="Proteína Vegana" style="display: block; margin: auto; width: 300px;">
-    <p style="color: #e60000; font-weight: bold; font-size: 18px; background-color: #ffffcc; padding: 5px; border-radius: 5px;">
-    ¡PRECIOS DEL MISMO PRODUCTO O SIMILAR EN OTRAS PAGINAS AQUI!!
-    </p>
-  </a>
-</div>
-
-<h2>SALES DE MAGNESIO</h2>
-<p>
-    ¿Qué son las sales de magnesio?
-
-    Las sales de magnesio son compuestos minerales que aportan magnesio, un mineral esencial para múltiples funciones en el cuerpo, incluyendo la relajación muscular, el metabolismo energético y el mantenimiento de la salud ósea y nerviosa.
-
-    <br><br>
-    ¿Qué beneficios aportan?
-
-    Las sales de magnesio ayudan a:
-
-    <ul>
-        <li>Reducir calambres y tensión muscular.</li>
-        <li>Mejorar la función nerviosa y el equilibrio electrolítico.</li>
-        <li>Favorecer la salud ósea y dental.</li>
-        <li>Contribuir a la relajación y a un mejor descanso.</li>
-    </ul>
-</p>
-
-<div style="background-color: #42d799; padding: 20px; text-align: center;">
-  <a href="https://www.miproducto.com.co/products/sales-de-magnesio-mg2-1000g-fruit-punch-ultraflex" target="_blank">
-    <img src="SALES DE MAGNESIO.png" alt="Sales de Magnesio" style="display: block; margin: auto; width: 300px;">
-    <p style="color: #e60000; font-weight: bold; font-size: 18px; background-color: #ffffcc; padding: 5px; border-radius: 5px;">
-      ¡PRECIOS DEL MISMO PRODUCTO O SIMILAR EN OTRAS PAGINAS AQUI!!
-    </p>
-  </a>
-</div>
-
-<section class="habilidades" id="habilidades" style="background-color: #ff0000; padding: 20px; text-align: center;">
-    <div class="contenido-seccion">
-        <h2 class="titulo-seccion">
-            CATALOGO MASTICABLES
-        </h2>
-        <div class="foto">
-            <img src="LOGO MASTICABLES.png" alt="Logo de la marca" style="width: 200px; height: 200px; border-radius: 50%; object-fit: cover; margin-top: 20px;">
-        </div>
-    </div>
-</section>
-
-<section style="background-color: #ff4aaea1; padding: 20px; text-align: center;">
-  <div class="contenido-seccion">
-    <h2 style="color: white;">RESVERATROL ¿PARA QUÉ SIRVE?</h2>
-    <div class="foto">
-      <img src="RESVERATROL.png" alt="Resveratrol" style="width: 200px; height: 200px; border-radius: 50%; object-fit: cover; margin: 20px auto;">
-    </div>
-    <p style="color: #ff0000; font-size: 16px; max-width: 600px; margin: auto; text-align: left;">
-      El <strong>resveratrol</strong> es un compuesto natural que se encuentra en alimentos como las uvas, el vino tinto, los arándanos y algunos frutos secos. Tiene propiedades antioxidantes y se ha relacionado con múltiples beneficios para la salud, especialmente en el envejecimiento y el sistema cardiovascular.
-      <br><br>
-      ¿Qué beneficios aporta?
-      <ul style="text-align: left; color: #000000;">
-        <H> Resveratrol – Fórmula Avanzada para tu Bienestar
-Suplemento masticable con ingredientes activos respaldados científicamente:
-
-Resveratrol
-
-Nicotinamida (Vitamina B3)
-
-Biotina (Vitamina B7)
-
-Vitamina D3 (Colecalciferol)
-
-Beneficios clave:
-
-Neutraliza el estrés oxidativo
-
-Activa las sirtuinas (proteínas relacionadas con la longevidad)
-
-Favorece la salud cardiovascular
-
-Optimiza el metabolismo
-
-Mejora la energía celular
-
-Fortalece cabello, piel y uñas
-
-Refuerza el sistema inmunológico
-
-Reduce inflamación crónica
-
-Modo de uso:
-Tomar de 2 a 3 comprimidos al día junto con una comida principal.
-
-Diseñado para quienes desean:
-
-Optimizar su energía celular
-
-Combatir el envejecimiento
-
-Mejorar su calidad de vida
-
-¿Te gustaría que prepare una versión adaptada para redes sociales o una ficha de producto en formato editable?
-
-Dijiste:
-Darme más completo como dice la imagen 
-ChatGPT dijo:
-Claro, aquí tienes el contenido completo que aparece en la imagen, organizado de forma clara y fiel al original, para que puedas reutilizarlo fácilmente:
-
-Resveratrol
-Fentok – 500 mg
-Tableta masticable a base de frutos rojos, colágeno, resveratrol, fortificada con biotina, nicotinamida y vitamina D3.
-90 unidades
-
-Este producto combina ingredientes activos respaldados científicamente: resveratrol, nicotinamida, biotina y vitamina D3, para ofrecer beneficios comprobados en longevidad, salud metabólica y bienestar general. Diseñado para quienes buscan optimizar su energía celular, combatir el envejecimiento y mejorar su calidad de vida.
-1. RESVERATROL
-Neutraliza el estrés oxidativo
-
-Activa las sirtuinas
-
-Salud cardiovascular
-
-2. NICOTINAMIDA (Vitamina B3)
-Esencial para la síntesis de ATP
-
-Protege las células frente a daños externos
-
-3. BIOTINA (Vitamina B7)
-Metabolismo optimizado
-
-Fortalece cabello, piel y uñas
-
-4. VITAMINA D3 (Colecalciferol)
-Sistema inmunológico fuerte
-
-Promueve la absorción de calcio
-
-Reduce la inflamación crónica
-
-Dosis recomendada:
-👉 2-3 comprimidos al día con una comida principal.</H>
-      </ul>
-    </p>
-    
-      <p style="color: #e60000; font-weight: bold; font-size: 18px; background-color: #ffffcc; padding: 5px; border-radius: 5px; margin-top: 20px;">
-        
-      </p>
-    </a>
-  </div>
-</section>
-
-<section style="background-color: #3589e8; padding: 20px; text-align: center;">
-  <div class="contenido-seccion">
-    <h2 style="color: white;">BISGLICINATO DE MAGNESIO ¿PARA QUÉ SIRVE?</h2>
-    <div class="foto">
-      <img src="BISGLICINATO DE MAGNESIO.png" alt="Bisglicinato de Magnesio" style="width: 200px; height: 200px; border-radius: 50%; object-fit: cover; margin: 20px auto;">
-    </div>
-    <p style="color: #f70000; font-size: 16px; max-width: 600px; margin: auto; text-align: left;">
-      El <strong>bisglicinato de magnesio</strong> es una forma quelada altamente biodisponible de magnesio, ideal para mejorar la absorción y reducir molestias digestivas. Es esencial para funciones musculares, nerviosas y metabólicas.
-      <br><br>
-      ¿Qué beneficios aporta?
-      <ul style="text-align: left; color: #000000;">
-      <h> Bisglicinato de Magnesio
-Este suplemento aporta magnesio en su forma más biodisponible (bisglicinato), lo que permite una absorción superior y mayor efectividad en el organismo.
-
-Beneficios clave del Magnesio (como bisglicinato):
-✅ Contribuye a la función muscular normal
-
-✅ Mejora la calidad del sueño
-
-✅ Apoya el sistema nervioso
-
-✅ Favorece la relajación y disminución del estrés
-
-✅ Ayuda a reducir la fatiga y el cansancio
-
-✅ Participa en la síntesis de proteínas
-
-✅ Apoya la salud ósea y articular
-
-¿Por qué Bisglicinato?
-El magnesio bisglicinato es una forma quelada, lo que significa que está unido a glicina, un aminoácido que facilita su absorción y suaviza su impacto en el sistema digestivo. Es ideal para personas con sensibilidad intestinal o que buscan mejores resultados en menos tiempo.
-
-Modo de uso sugerido:
-Tomar 1-2 cápsulas al día con una comida principal o según indicación de un profesional de la salud.</h>
-      </ul>
-      <strong>Dosis recomendada:</strong> 1 a 2 cápsulas al día junto con una comida principal.
-    </p>
-
-    
-      <p style="color: #e60000; font-weight: bold; font-size: 18px; background-color: #ffffcc; padding: 5px; border-radius: 5px; margin-top: 20px;">
-        
-      </p>
-    </a>
-  </div>
-</section>
-
-<section style="background-color: #72c958d5; padding: 20px; text-align: center;">
-  <div class="contenido-seccion">
-    <h2 style="color: white;">ASHWAGANDHA DH3 ¿PARA QUÉ SIRVE?</h2>
-    <div class="foto">
-      <img src="aswanda.png" alt="Ashwagandha DH3" style="width: 200px; height: 200px; border-radius: 50%; object-fit: cover; margin: 20px auto;">
-    </div>
-    <p style="color: #f70000; font-size: 16px; max-width: 700px; margin: auto; text-align: left;">
-      La <strong>Ashwagandha (Withania somnifera)</strong>, también conocida como ginseng indio, es una planta adaptógena muy utilizada en la medicina ayurvédica. Sus beneficios principales son:
-    </p>
-
-    <ul style="text-align: left; color: #000000; max-width: 700px; margin: 20px auto; font-size: 16px;">
-      <li>✅ <strong>Reducir el estrés y la ansiedad:</strong> Ayuda a disminuir los niveles de cortisol, la hormona del estrés.</li>
-      <li>✅ <strong>Mejorar el sueño:</strong> Puede ayudar a conciliar un sueño más profundo y reparador.</li>
-      <li>✅ <strong>Aumentar la energía y la resistencia física:</strong> Mejora la vitalidad y combate la fatiga.</li>
-      <li>✅ <strong>Favorecer la concentración y la memoria:</strong> Se le atribuyen efectos positivos sobre el funcionamiento cognitivo.</li>
-      <li>✅ <strong>Apoyar el sistema inmunológico:</strong> Ayuda a fortalecer las defensas del cuerpo.</li>
-      <li>✅ <strong>Equilibrar las hormonas:</strong> En mujeres, puede ayudar con síntomas del síndrome premenstrual y la menopausia.</li>
-      <li>✅ <strong>Mejorar la masa muscular y la fuerza:</strong> Combinada con ejercicio, puede tener efectos positivos en el rendimiento físico.</li>
-    </ul>
-
-    <p style="color: #e60000; font-weight: bold; font-size: 18px; background-color: #ffffcc; padding: 10px; border-radius: 5px; max-width: 500px; margin: 20px auto;">
-      Dosis recomendada: 1 a 2 cápsulas al día junto con una comida principal.
-    </p>
-  </div>
-</section>
-
-
-
-
-
-<section class="habilidades" id="habilidades" style="background-color: #ff0000; padding: 20px; text-align: center;">
-    <div class="contenido-seccion">
-        <h2 class="titulo-seccion">
-            CATALOGO COSMETICOS
-        </h2>
-        <div class="foto">
-            <img src="LOGO COSMETICOS.png" alt="Logo de la marca" style="width: 200px; height: 200px; border-radius: 50%; object-fit: cover; margin-top: 20px;">
-        </div>
-    </div>
-</section>
-
-
-<section style="background-color: #ffffff; padding: 20px; text-align: center;">
-  <div class="contenido-seccion">
-    <h2 style="color: rgb(0, 0, 0);">GLOWMELT ¿PARA QUÉ SIRVE?</h2>
-    <div class="foto">
-      <img src="GLOWMELT.png" alt="GlowMelt" style="width: 200px; height: 200px; object-fit: contain; margin: 20px auto; display: block;">
-    </div>
-    <p style="color: #f70000; font-size: 16px; max-width: 600px; margin: auto; text-align: left;">
-      <strong>GlowMelt</strong>  Formulado para mejorar la salud y apariencia de la piel desde el interior, combinando potentes ingredientes activos que favorecen la hidratación, elasticidad y luminosidad.
-      <br><br>
-      ¿Qué beneficios aporta?
-      <ul style="text-align: left; color: #000000;">
-        <h>GLOWMELT – Loción Termoactiva
-✅ ¿Para qué sirve?
-Es una loción en spray de uso tópico que alivia dolores musculares y articulares gracias a su efecto calor/frío, que promueve la relajación muscular, reduce inflamación y mejora la circulación sanguínea. Ideal para:
-
-Dolores musculares y articulares
-
-Tensión y rigidez
-
-Recuperación física
-
-Pesadez en piernas
-
-Estrés muscular
-
-🔥 Beneficios destacados:
-Efecto rápido y eficaz contra el dolor
-
-Antiinflamatorio natural
-
-Mejora la circulación
-
-Relaja los músculos
-
-Ideal para uso diario sin irritar la piel
-
-🌿 Principales activos y lo que hacen:
-Salicilato: Antiinflamatorio y analgésico
-
-Mentol: Refresca y alivia
-
-Alcanfor: Estimula la circulación y reduce el dolor
-
-Caléndula: Cicatrizante y antiinflamatoria
-
-Valeriana: Relajante y calmante
-
-Castaño de Indias: Reduce pesadez y mejora circulación
-
-Hamamelis: Antiinflamatorio y astringente
-
-Uña de Gato: Antiinflamatoria y analgésica
-
-Chuchuguaza: Tradicionalmente usada para dolor muscular
-
-🧪 Ingredientes destacados:
-Agua, Alcohol, Mentol, Alcanfor
-
-Extractos naturales: Valeriana, Caléndula, Hamamelis, Castaño de Indias, Uña de Gato, Chuchuguaza
-
-Methyl Salicylate (derivado del salicilato)
-
-🛡️ Libre de:
-❌ Parabenos
-
-❌ Sulfatos
-
-✅ Con extractos naturales</h>
-   
-
-   
-      <p style="color: #e60000; font-weight: bold; font-size: 18px; background-color: #ffffcc; padding: 5px; border-radius: 5px; margin-top: 20px;">
-       
-      </p>
-    </a>
-  </div>
-</section>
-
-
-<section style="background-color: #bcbbbc; padding: 20px; text-align: center;">
-  <div class="contenido-seccion">
-    <h2 style="color: rgb(0, 0, 0);">MAKEUP COLLAGEN ¿PARA QUÉ SIRVE?</h2>
-    <div class="foto">
-      <img src="MAKEUP COLGEN.png" alt="Makeup Collagen" style="width: 200px; height: 200px; object-fit: contain; margin: 20px auto; display: block;">
-    </div>
-    <p style="color: #f70000; font-size: 16px; max-width: 600px; margin: auto; text-align: left;">
-      <strong>Makeup Collagen</strong> 
-      <br><br>
-      ¿Qué beneficios aporta?
-      <ul style="text-align: left; color: #000000;">
-        <h>MAKEUP COLLAGEN – Belleza desde el interior
-✅ ¿Para qué sirve?
-Apoya la regeneración y firmeza de la piel, ayuda a reducir líneas de expresión y fortalece uñas y cabello.
-
-🔥 Beneficios destacados:
-• Mejora la elasticidad y firmeza de la piel  
-• Fortalece cabello y uñas  
-• Promueve la producción natural de colágeno  
-• Aporta hidratación y luminosidad al rostro  
-• Combate los signos del envejecimiento  
-
-🌿 Principales ingredientes:
-• Colágeno hidrolizado: proteína esencial para estructura y firmeza  
-• Biotina: favorece el crecimiento y fortalecimiento capilar  
-• Vitamina C: estimula producción de colágeno y protege frente a radicales libres  
-• Ácido hialurónico: mantiene la piel hidratada y tersa  
-• Zinc y antioxidantes: protegen la piel del daño oxidativo  
-
-🧪 Fórmula libre de:
-❌ Azúcares añadidos  
-❌ Gluten  
-✅ Con sabor agradable y textura masticable  
-        </h>
-      
-
-    
-      <p style="color: #e60000; font-weight: bold; font-size: 18px; background-color: #ffffcc; padding: 5px; border-radius: 5px; margin-top: 20px;">
-        
-      </p>
-    </a>
-  </div>
-</section>
-
-
-<section style="background-color: #ffffff; padding: 20px; text-align: center;">
-  <div class="contenido-seccion">
-    <h2 style="color: rgb(0, 0, 0);">AQUAGLOW ¿PARA QUÉ SIRVE?</h2>
-    <div class="foto">
-      <img src="AQUA GLOW.png" alt="AquaGlow" style="width: 200px; height: 200px; object-fit: contain; margin: 20px auto; display: block;">
-    </div>
-    <p style="color: #f70000; font-size: 16px; max-width: 600px; margin: auto; text-align: left;">
-      <strong>AquaGlow</strong> limpia profundamente tu piel sin resecarla, gracias a su contenido de extractos naturales como aloe vera, avena, arroz, moringa, papaya, manzanilla, azucena, arroz, vitamina C y antioxidantes botánicos. 
-      <br><br>
-      Estos ingredientes ayudan a restaurar el balance natural de la piel y le dan un brillo saludable, dejándola limpia, suave, tersa e hidratada. Ideal para usar como parte de tu rutina de belleza diaria.
-      <br><br>
-      Su textura suave tipo mousse es perfecta para limpiar la piel del rostro dejándola suave y fresca.
-      <br><br>
-      <strong>¿Qué beneficios aporta?</strong>
-      <ul style="text-align: left; color: #000000;">
-        <li>🔹 Limpieza profunda sin resecar.</li>
-        <li>🔹 Textura mousse suave.</li>
-        <li>🔹 Hidratación y suavidad inmediata.</li>
-        <li>🔹 Ideal para uso diario.</li>
-        <li>🔹 Con antioxidantes naturales y vitamina C.</li>
-      </ul>
-
-      <strong>Libre de:</strong><br>
-      <ul style="text-align: left; color: #000000;">
-        <li>❌ Parabenos</li>
-        <li>❌ Sulfatos</li>
-        <li>❌ Colorantes</li>
-      </ul>
-
-      <strong>Contiene extractos naturales de:</strong><br>
-      Aloe vera, avena, moringa, papaya, manzanilla, azucena, arroz, vitamina C y antioxidantes botánicos.
-      <br><br>
-
-      <strong>Ingredientes:</strong><br>
-      <span style="color: #000000;">
-        Aqua, Sodium Lauroyl Sarcosinate, Cocamidopropyl Betaine, Cocoyl Glutamate, Glycerin, Coco-Glucoside, Aloe Barbadensis Leaf Juice, Chamomilla Recutita Extract, Calendula Officinalis Flower Extract, Vitis Vinifera Extract, Propylene Glycol, PEG-7 Glyceryl Cocoate, Parfum, Sodium Benzoate, Citric Acid, Disodium EDTA, Phenoxyethanol, Ethylhexylglycerin, Polysorbate 20, BHT, CI 16035, Hydrogenated Castor Oil, Butylcarbamate.
-      </span>
-    </p>
-
-      <p style="color: #e60000; font-weight: bold; font-size: 18px; background-color: #ffffcc; padding: 5px; border-radius: 5px; margin-top: 20px;">
-     
-      </p>
-    </a>
-  </div>
-</section>
-
-<section style="background-color:  #bcbbbc; padding: 20px; text-align: center;">
-  <div class="contenido-seccion">
-    <h2 style="color: rgb(0, 0, 0);">VELVETFLOW ¿PARA QUÉ SIRVE?</h2>
-    <div class="foto">
-      <img src="VELVETGLOW.png" alt="VelvetFlow" style="width: 200px; height: 200px; object-fit: contain; margin: 20px auto; display: block;">
-    </div>
-    <p style="color: #f70000; font-size: 16px; max-width: 600px; margin: auto; text-align: left;">
-      <strong>VelvetFlow</strong> es una innovadora fórmula que combina lo mejor de la biodiversidad colombiana con un avanzado complejo de aminoácidos. Esta sinergia única fomenta la síntesis natural de colágeno, vital para la elasticidad y firmeza de la piel, a la vez que asegura una hidratación profunda y duradera.
-      <br><br>
-      Enriquecido con selectos activos botánicos colombianos, este mousse no solo nutre intensamente, sino que también resalta la luminosidad natural de la piel, revelando un rostro armonioso, expresivo y radiante. Diseñado para adaptarse a las necesidades de todos los tipos de piel, VelvetFlow transforma tu rutina en una experiencia de belleza transformadora, donde la naturaleza y la ciencia se unen para celebrar la esencia de tu belleza.
-      <br><br>
-
-      <strong>¿Qué beneficios aporta?</strong>
-      <ul style="text-align: left; color: #000000;">
-        <li>🌿 Estimula la producción natural de colágeno</li>
-        <li>💧 Hidratación profunda y prolongada</li>
-        <li>✨ Mejora la elasticidad y firmeza de la piel</li>
-        <li>🌟 Ilumina el rostro y mejora su apariencia</li>
-        <li>🧪 Apto para todo tipo de piel</li>
-      </ul>
-
-      <strong>Libre de:</strong><br>
-      <ul style="text-align: left; color: #000000;">
-        <li>❌ Parabenos</li>
-        <li>❌ Sulfatos</li>
-        <li>❌ Colorantes</li>
-      </ul>
-
-      <strong>Contiene extractos naturales de:</strong><br>
-      Pepino, algas, manzanilla, rosa damascena, ácido hialurónico, y biotecnología vegetal avanzada.
-      <br><br>
-
-      <strong>Ingredientes:</strong><br>
-      <span style="color: #000000;">
-        Aqua, Rosa Damascena Flower Water Extract, Propanediol, Cococaprylate/Caprate, Glycerin, Coco-Caprylate, Algae Extract, Cucumis Sativus (Cucumber) Extract, Sclerotium Gum, Xanthan Gum, Carrageenan, Bisabolol, Ethylhexylglycerin, Sodium Hyaluronate, Parfum, Phenoxyethanol, Lactic Acid, Disodium EDTA, CI 16255, CI 42090, CI 19140, Mica.
-      </span>
-    </p>
-
-    
-      <p style="color: #e60000; font-weight: bold; font-size: 18px; background-color: #ffffcc; padding: 5px; border-radius: 5px; margin-top: 20px;">
-        
-      </p>
-    </a>
-  </div>
-</section>
-
-
-<section style="background-color: #ffffff; padding: 20px; text-align: center;">
-  <div class="contenido-seccion">
-    <h2 style="color: rgb(0, 0, 0);">GLOWGLOWTH ¿PARA QUÉ SIRVE?</h2>
-    <div class="foto">
-      <img src="GLOGLOWTH.png" alt="GlowGlowth" style="width: 200px; height: 200px; object-fit: contain; margin: 20px auto; display: block;">
-    </div>
-    <p style="color: #f70000; font-size: 16px; max-width: 600px; margin: auto; text-align: left;">
-      <strong>GlowGlowth</strong> es una fórmula diseñada con ingredientes naturales como los extractos de romero, quina, cebolla y ganoderma lucidum (hongo reishi), junto a activos de alta tecnología como aminoácidos esenciales, capilina, biotina y urea.
-      <br><br>
-      Esta combinación fortalece la fibra capilar, incrementa el crecimiento del cabello desde el folículo piloso y aporta un alto contenido de nutrientes y vitaminas. ¡Dile adiós al cabello escaso, delgado y sin vida!
-      <br><br>
-
-      <strong>¿Qué beneficios aporta?</strong>
-      <ul style="text-align: left; color: #000000;">
-        <li>🌿 Estimula el crecimiento capilar</li>
-        <li>💧 Fortalece el folículo piloso</li>
-        <li>✨ Mejora la densidad y volumen del cabello</li>
-        <li>💊 Aporta nutrientes esenciales y vitaminas</li>
-        <li>🧪 Apto para cabello delgado y débil</li>
-      </ul>
-
-      <strong>Libre de:</strong><br>
-      <ul style="text-align: left; color: #000000;">
-        <li>❌ Parabenos</li>
-        <li>❌ Sulfatos</li>
-        <li>❌ Colorantes</li>
-      </ul>
-
-      <strong>Contiene extractos naturales de:</strong><br>
-      Romero, quina, cebolla, ganoderma.
-      <br><br>
-
-      <strong>Ingredientes:</strong><br>
-      <span style="color: #000000;">
-        Aqua, Ganoderma Lucidum Ferment Filtrate, Glycerin, Panthenol, Cocamidopropyl Betaine, Cocamide DEA, Ammonium Lauryl Sulfate, Sodium Chloride, Quillaja Saponaria Bark Extract, Propylene Glycol, Quinoa Protein, Amino Acids (Arginine, Threonine, Alanine, Glutamic Acid, Glycine, Lysine, Serine, Proline, Valine), Polyquaternium-7, Cocodimonium Hydroxypropyl Hydrolyzed Rice Protein, Caprylic/Capric Triglyceride, Biotin, Urea, Hydrolyzed Soy Protein, Citric Acid, Phenoxyethanol, Fragrance (Parfum), Disodium EDTA, Allium Cepa (Onion) Bulb Extract, Rosmarinus Officinalis (Rosemary) Extract, Cinchona Officinalis (Quina) Extract, CI 42090, CI 19140, CI 16255, Sodium Hydroxide, Polysorbate 20, Diazolidinyl Urea, Iodopropynyl Butylcarbamate.
-      </span>
-    </p>
-
-    
-      <p style="color: #e60000; font-weight: bold; font-size: 18px; background-color: #ffffcc; padding: 5px; border-radius: 5px; margin-top: 20px;">
-        
-      </p>
-    </a>
-  </div>
-</section>
-
-<section style="background-color: #bcbbbc; padding: 20px; text-align: center;">
-  <div class="contenido-seccion">
-    <h2 style="color: rgb(0, 0, 0);">HERBATHERM ¿PARA QUÉ SIRVE?</h2>
-    <div class="foto">
-      <img src="HERBATHERM.png" alt="HerbaTherm" style="width: 200px; height: 200px; object-fit: contain; margin: 20px auto; display: block;">
-    </div>
-    <p style="color: #f70000; font-size: 16px; max-width: 600px; margin: auto; text-align: left;">
-      <strong>HerbaTherm</strong> es un producto diseñado para proteger el cabello del daño causado por el calor de instrumentos como planchas, rizadores, secadores y más.
-      <br><br>
-      Contiene extractos naturales de moringa, menta, keratina, junquillo y pro-vitamina B5, que forman una capa protectora en el cabello, evitando que se dañe o se queme con el calor. Además, ayuda a prevenir la pérdida del color del cabello teñido, manteniendo un tono vibrante y duradero.
-      <br><br>
-      El uso del termoprotector HerbaTherm antes de herramientas térmicas ayuda a mantener un cabello sano y fuerte, protegiéndolo del calor, reduciendo la rotura, la sequedad y el encrespamiento.
-      <br><br>
-
-      <strong>¿Qué beneficios aporta?</strong>
-      <ul style="text-align: left; color: #000000;">
-        <li>🔥 Protección térmica contra planchas y secadores</li>
-        <li>💧 Mantiene la hidratación capilar</li>
-        <li>🎨 Preserva el color del cabello teñido</li>
-        <li>💪 Reduce rotura y quiebre del cabello</li>
-        <li>✨ Controla el frizz y mejora el brillo</li>
-      </ul>
-
-      <strong>Libre de:</strong><br>
-      <ul style="text-align: left; color: #000000;">
-        <li>❌ Parabenos</li>
-        <li>❌ Sulfatos</li>
-      </ul>
-
-      <strong>Contiene extractos naturales de:</strong><br>
-      Moringa, menta, keratina, junquillo y pro-vitamina B5.
-      <br><br>
-
-      <strong>Ingredientes:</strong><br>
-      <span style="color: #000000;">
-        Aqua, Cyclopentasiloxane (and) Dimethicone, Propanediol, VP/VA Copolymer, PEG-40 Hydrogenated Castor Oil, Parfum (Fragrance), Polyquaternium-11, Panthenol, Phenoxyethanol, Hydrolyzed Keratin, PEG-12 Dimethicone, Moringa Oleifera Leaf Extract, Mentha Piperita Extract, Lippia Alba Extract, Hydrolyzed Wheat Protein, Juniperus Communis Extract, Ethylhexylglycerin, Linalool, Citronellol, Hexyl Cinnamal, Limonene, Alpha-Isomethyl Ionone, CI 42090, CI 15985, CI 19140.
-      </span>
-    </p>
-
-   
-      <p style="color: #e60000; font-weight: bold; font-size: 18px; background-color: #ffffcc; padding: 5px; border-radius: 5px; margin-top: 20px;">
-      
-      </p>
-    </a>
-  </div>
-</section>
-
-<section style="background-color: #ffffff; padding: 20px; text-align: center;">
-  <div class="contenido-seccion">
-    <h2 style="color: rgb(0, 0, 0);">VITAGLOW ¿PARA QUÉ SIRVE?</h2>
-    <div class="foto">
-      <img src="VITAGLOW.png" alt="VitaGlow" style="width: 200px; height: 200px; object-fit: contain; margin: 20px auto; display: block;">
-    </div>
-    <p style="color: #f70000; font-size: 16px; max-width: 600px; margin: auto; text-align: left;">
-      <strong>VitaGlow</strong> ha sido desarrollado con ingredientes de origen natural y avances tecnológicos de vanguardia. Su fórmula incluye macadamia, colágeno, extracto de trigo, germen de trigo, mucílago de sábila, granos de café y aminoácidos esenciales.
-      <br><br>
-      Este tratamiento ofrece una revitalización profunda del cabello desde la raíz hasta las puntas. Repara daños, fortalece la estructura capilar, mejora la suavidad del cabello y realza su brillo natural.
-      <br><br>
-      Además, gracias a sus propiedades nutritivas y reparadoras, ayuda a prevenir la caída del cabello y el quiebre, asegurando una melena más saludable, brillante y libre de resequedad.
-      <br><br>
-
-      <strong>¿Qué beneficios aporta?</strong>
-      <ul style="text-align: left; color: #000000;">
-        <li>💧 Hidratación profunda desde la raíz</li>
-        <li>🛡️ Repara daños estructurales del cabello</li>
-        <li>✨ Aporta brillo y suavidad</li>
-        <li>💪 Fortalece la fibra capilar</li>
-        <li>🚫 Previene la caída y quiebre del cabello</li>
-      </ul>
-
-      <strong>Libre de:</strong><br>
-      <ul style="text-align: left; color: #000000;">
-        <li>❌ Parabenos</li>
-        <li>❌ Sulfatos</li>
-      </ul>
-
-      <strong>Contiene extractos naturales de:</strong><br>
-      Aguacate, quinoa, colágeno, mucílago de sábila, germen de trigo y granos de café.
-      <br><br>
-
-      <strong>Ingredientes:</strong><br>
-      <span style="color: #000000;">
-        Aqua, Behentrimonium Methosulfate, Polyquaternium-7, Cetearyl Alcohol, Cetyl Alcohol, Coffea Arabica Fruit Extract, Hydrolyzed Collagen, Hydrolyzed Quinoa, Persea Gratissima (Avocado) Oil, Simmondsia Chinensis (Jojoba) Seed Oil, Panthenol, Parfum, Glycerin, Triticum Vulgare (Wheat) Germ Oil, Aloe Barbadensis Leaf Extract, Glycine, Alanine, Serine, Valine, Proline, Threonine, Isoleucine, Histidine, Phenylalanine, Citric Acid, Disodium EDTA, Benzyl Alcohol, CI 19140, CI 42090, CI 60730, CI 14720.
-      </span>
-    </p>
-
-    
-      <p style="color: #e60000; font-weight: bold; font-size: 18px; background-color: #ffffcc; padding: 5px; border-radius: 5px; margin-top: 20px;">
-        
-      </p>
-    </a>
-  </div>
-</section>
-
-<section style="background-color:  #bcbbbc; padding: 20px; text-align: center;">
-  <div class="contenido-seccion">
-    <h2 style="color: rgb(0, 0, 0);">VIVIDGLOW ¿PARA QUÉ SIRVE?</h2>
-    <div class="foto">
-      <img src="VIVIDGLOW.png" alt="VividGlow" style="width: 200px; height: 200px; object-fit: contain; margin: 20px auto; display: block;">
-    </div>
-    <p style="color: #f70000; font-size: 16px; max-width: 600px; margin: auto; text-align: left;">
-      <strong>VividGlow</strong> ha sido diseñado con ingredientes naturales como extractos de romero, quinoa y café, y enriquecido con biotina, colágeno y aminoácidos esenciales. Estos ingredientes nutren profundamente el cabello desde la raíz hasta las puntas, fortalecen las fibras capilares y previenen la caída del cabello.
-      <br><br>
-      Su contenido de extractos naturales, vitaminas y aminoácidos repara y revitaliza el cabello dañado, nutriendo el cuero cabelludo para un cabello fuerte y saludable.
-      <br><br>
-
-      <strong>¿Qué beneficios aporta?</strong>
-      <ul style="text-align: left; color: #000000;">
-        <li>💧 Nutrición profunda desde la raíz</li>
-        <li>🛡️ Fortalecimiento de las fibras capilares</li>
-        <li>✨ Estimula el crecimiento del cabello</li>
-        <li>🚫 Previene la caída del cabello</li>
-        <li>🌿 Repara y revitaliza el cabello dañado</li>
-      </ul>
-
-      <strong>Libre de:</strong><br>
-      <ul style="text-align: left; color: #000000;">
-        <li>❌ Parabenos</li>
-        <li>❌ Sulfatos</li>
-      </ul>
-
-      <strong>Contiene extractos naturales de:</strong><br>
-      Romero, quinoa y café.
-      <br><br>
-
-      <strong>Ingredientes:</strong><br>
-      <span style="color: #000000;">
-        Aqua, Sodium Cocoyl Glutamate, Disodium Cocoyl Glutamate, Sodium Cocoyl Glycinate, Lauryl Glucoside, Sodium Cocoyl Isethionate, Xanthan Gum, Polyquaternium-10, Panthenol, Hydrolyzed Collagen, Biotin, Caprylyl Glycol, Ethylhexylglycerin, Coffea Arabica Fruit Extract, Rosmarinus Officinalis Leaf Extract, Chenopodium Quinoa Seed Extract, Parfum, Citric Acid, Sodium Hydroxide, Sodium Benzoate, Potassium Sorbate, Disodium EDTA, PEG-90M, Hydrolyzed Wheat Protein, Glycerin, CI 19140, CI 42090, CI 60730, CI 15850, MICA.
-      </span>
-    </p>
-
-    
-      <p style="color: #e60000; font-weight: bold; font-size: 18px; background-color: #ffffcc; padding: 5px; border-radius: 5px; margin-top: 20px;">
-        
-      </p>
-    </a>
-  </div>
-</section>
-
- <section class="habilidades" id="habilidades" style="background-color: #ff0000; padding: 20px; text-align: center;">
-    <div class="contenido-seccion">
-        <h2 class="titulo-seccion">
-            CATALOGO LIQUIDOS
-        </h2>
-        <div class="foto">
-            <img src="LOGO LIQUIDOS.png" alt="Logo de la marca" style="width: 200px; height: 200px; border-radius: 50%; object-fit: cover; margin-top: 20px;">
-        </div>
-    </div>
-</section>
-
-
-
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Nyperim - Regulador Digestivo Natural">
-    <title>Nyperim - Regulador Digestivo</title>
-    <style>
-        body { font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: #f4f4f9; }
-        .container { max-width: 800px; margin: auto; padding: 20px; background: #fff; border-radius: 8px; box-shadow: 0 0 20px rgba(0,0,0,0.1); }
-        h2 { color: #27ae60; text-align: center; }
-        p { font-size: 16px; line-height: 1.6; }
-        .highlight { background-color: #ffffcc; padding: 5px; border-radius: 5px; font-weight: bold; color: #e60000; }
-        .image-container { text-align: center; margin: 20px 0; }
-        .image-container img { width: 300px; border-radius: 8px; }
-        a { text-decoration: none; }
-    </style>
-</head>
-<body>
-    <div class="container">
-        <h2>Nyperim - Regulador Digestivo</h2>
-        <p><strong>Efecto fisiológico:</strong> Colon irritable, gastritis, diverticulitis, dispepsia y como coadyuvante en estreñimiento.</p>
-        <p><strong>Acción fisiológica:</strong> Nyperim es un nutracéutico que favorece la salud digestiva, modulando cambios en el pH intestinal y promoviendo el crecimiento de bacterias benéficas.</p>
-        <h3>Ingredientes:</h3>
-        <ul>
-            <li>Aloe Vera</li>
-            <li>Mangostino</li>
-            <li>Konjac</li>
-            <li>Carica Papaya</li>
-            <li>Piña</li>
-            <li>Vitamina C y E</li>
-            <li>Zinc</li>
-        </ul>
-        <p><strong>Posología:</strong> 3 tomas diarias. Diluir en agua.</p>
-        <p><strong>Registro Sanitario:</strong> RSA-001084-2020 (VARIEDAD 4)</p>
-        <div class="image-container">
-            <a href="https://estarbienonline.com/producto/nyperim-x-500-ml/?srsltid=AfmBOorYGctYOaOB7s9mTxxqqxcoK_i1Ouk3XphxXYm9UDC6UfRxXB85" target="_blank">
-                <img src="nyperim.png" alt="Nyperim">
-                <p class="highlight">¡CONOCE MÁS SOBRE NYPERIM AQUÍ!</p>
-            </a>
-        </div>
-    </div>
-</body>
-</html>
-
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Egaliv - Regeneración Hepática Natural">
-    <title>Egaliv - Regeneración Hepática</title>
-    <style>
-        body { font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: #f4f4f9; }
-        .container { max-width: 800px; margin: auto; padding: 20px; background: #fff; border-radius: 8px; box-shadow: 0 0 20px rgba(0,0,0,0.1); }
-        h2 { color: #27ae60; text-align: center; }
-        p { font-size: 16px; line-height: 1.6; }
-        .highlight { background-color: #ffffcc; padding: 5px; border-radius: 5px; font-weight: bold; color: #e60000; }
-        .image-container { text-align: center; margin: 20px 0; }
-        .image-container img { width: 300px; border-radius: 8px; }
-        a { text-decoration: none; }
-    </style>
-</head>
-<body>
-    <div class="container">
-        <h2>Egaliv - Regeneración Hepática</h2>
-        <p><strong>Efecto fisiológico:</strong> Depurador hepático, reduce niveles colesterol y triglicéridos, mejora hígado graso.</p>
-        <p><strong>Acción fisiológica:</strong> Egaliv es un nutracéutico eficaz que apoya los procesos regenerativos y depuradores del hígado.</p>
-        <h3>Ingredientes:</h3>
-        <ul>
-            <li>Konjac</li>
-            <li>Tamarindo</li>
-            <li>Mangostino</li>
-            <li>Vitaminas B1, B2, B8</li>
-            <li>Minerales</li>
-        </ul>
-        <p><strong>Posología:</strong> 3 tomas diarias. Diluir en agua.</p>
-        <p><strong>Registro Sanitario:</strong> RSA-001329-2020 (VARIEDAD 4)</p>
-        <div class="image-container">
-            <a href="https://pielmedic.com/producto/egaliv-500-ml/" target="_blank">
-                <img src="EGALIU.png" alt="Egaliv">
-                <p class="highlight">¡CONOCE MÁS SOBRE EGALIV AQUÍ!</p>
-            </a>
-        </div>
-    </div>
-</body>
-</html>
-
-
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Colgen Complex - Soporte Mecánico y Metabólico Natural">
-    <title>Colgen Complex - Soporte Mecánico y Metabólico</title>
-    <style>
-        body { font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: #f4f4f9; }
-        .container { max-width: 800px; margin: auto; padding: 20px; background: #fff; border-radius: 8px; box-shadow: 0 0 20px rgba(0,0,0,0.1); }
-        h2 { color: #27ae60; text-align: center; }
-        p { font-size: 16px; line-height: 1.6; }
-        .highlight { background-color: #ffffcc; padding: 5px; border-radius: 5px; font-weight: bold; color: #e60000; }
-        .image-container { text-align: center; margin: 20px 0; }
-        .image-container img { width: 300px; border-radius: 8px; }
-        a { text-decoration: none; }
-    </style>
-</head>
-<body>
-    <div class="container">
-        <h2>Colgen Complex - Soporte Mecánico y Metabólico</h2>
-        <p><strong>Efecto fisiológico:</strong> Coadyuvante en procesos de degeneración articular, varices, osteoporosis.</p>
-        <p><strong>Acción fisiológica:</strong> Colgen Complex proporciona un soporte mecánico y metabólico para la salud articular y ósea.</p>
-        <h3>Ingredientes:</h3>
-        <ul>
-            <li>Péptidos</li>
-            <li>Glicina</li>
-            <li>Arginina</li>
-            <li>Vitamina C</li>
-            <li>Minerales (Magnesio)</li>
-        </ul>
-        <p><strong>Posología:</strong> 3 tomas diarias en agua o jugo. Preferiblemente antes del desayuno.</p>
-        <p><strong>Registro Sanitario:</strong> RSA-001084-2020 VARIEDAD 1</p>
-        <div class="image-container">
-            <a href="https://sanaste.co/products/colgen-complex-500ml?srsltid=AfmBOooznVUytik2ezQ8A1QzGzoMM7Uwu-R5nCfCElcy1wwHfpsu8BZo" target="_blank">
-                <img src="COLGEN COMPLEX.png" alt="Colgen Complex">
-                <p class="highlight">¡CONOCE MÁS SOBRE COLGEN AQUÍ!</p>
-            </a>
-        </div>
-    </div>
-</body>
-</html>
-
-
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="X3 - Energizante y Antioxidante Natural">
-    <title>X3 - Energizante y Antioxidante</title>
-    <style>
-        body { font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: #f4f4f9; }
-        .container { max-width: 800px; margin: auto; padding: 20px; background: #fff; border-radius: 8px; box-shadow: 0 0 20px rgba(0,0,0,0.1); }
-        h2 { color: #27ae60; text-align: center; }
-        p { font-size: 16px; line-height: 1.6; }
-        .highlight { background-color: #ffffcc; padding: 5px; border-radius: 5px; font-weight: bold; color: #e60000; }
-        .image-container { text-align: center; margin: 20px 0; }
-        .image-container img { width: 300px; border-radius: 8px; }
-        a { text-decoration: none; }
-    </style>
-</head>
-<body>
-    <div class="container">
-        <h2>X3 - Energizante y Antioxidante</h2>
-        <p><strong>Efecto fisiológico:</strong> Antiestrés, tonificante, revitalizante, antioxidante, mejora estado de alerta y niveles de energía.</p>
-        <p><strong>Acción fisiológica:</strong> X3 captura radicales libres y mejora la producción de energía celular, fortaleciendo el sistema inmune y cardiovascular.</p>
-        <h3>Ingredientes:</h3>
-        <ul>
-            <li>Clorofila</li>
-            <li>Vitamina C</li>
-            <li>Vitamina B6</li>
-            <li>Mangostino</li>
-            <li>Aloe vera</li>
-            <li>Magnesio, Zinc</li>
-        </ul>
-        <p><strong>Posología:</strong> 2 o 3 tomas diarias con los alimentos, preferiblemente en las mañanas.</p>
-        <p><strong>Registro Sanitario:</strong> RSAD19I3114</p>
-        <div class="image-container">
-            <a href="https://www.facebook.com/100064142708170/posts/155973652699924/" target="_blank">
-                <img src="X3.png" alt="X3 Energizante">
-                <p class="highlight">¡CONOCE MÁS SOBRE X3 AQUÍ!</p>
-            </a>
-        </div>
-    </div>
-</body>
-</html>
-
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="X3 - Energizante y Antioxidante Natural">
-    <title>X3 - Energizante y Antioxidante</title>
-    <style>
-        body { font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: #f4f4f9; }
-        .container { max-width: 800px; margin: auto; padding: 20px; background: #fff; border-radius: 8px; box-shadow: 0 0 20px rgba(0,0,0,0.1); }
-        h2 { color: #27ae60; text-align: center; }
-        p { font-size: 16px; line-height: 1.6; }
-        .highlight { background-color: #ffffcc; padding: 5px; border-radius: 5px; font-weight: bold; color: #e60000; }
-        .image-container { text-align: center; margin: 20px 0; }
-        .image-container img { width: 300px; border-radius: 8px; }
-        a { text-decoration: none; }
-    </style>
-</head>
-<body>
-    <div class="container">
-        <h2>X3 - Energizante y Antioxidante</h2>
-        <p><strong>Efecto fisiológico:</strong> Antiestrés, tonificante, revitalizante, antioxidante, mejora estado de alerta y niveles de energía.</p>
-        <p><strong>Acción fisiológica:</strong> X3 captura radicales libres y mejora la producción de energía celular, fortaleciendo el sistema inmune y cardiovascular.</p>
-        <h3>Ingredientes:</h3>
-        <ul>
-            <li>Clorofila</li>
-            <li>Vitamina C</li>
-            <li>Vitamina B6</li>
-            <li>Mangostino</li>
-            <li>Aloe vera</li>
-            <li>Magnesio, Zinc</li>
-        </ul>
-        <p><strong>Posología:</strong> 2 o 3 tomas diarias con los alimentos, preferiblemente en las mañanas.</p>
-        <p><strong>Registro Sanitario:</strong> RSAD19I3114</p>
-        <div class="image-container">
-            <a href="https://www.facebook.com/100064142708170/posts/158955325735090/" target="_blank">
-                <img src="ARTREXAN.png" alt="X3 Energizante">
-                <p class="highlight">¡CONOCE MÁS SOBRE X3 AQUÍ!</p>
-            </a>
-        </div>
-    </div>
-</body>
-</html>
-
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Bioarthry - Control de Dolor Tópico">
-    <title>Bioarthry - Control de Dolor Tópico</title>
-    <style>
-        body { font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: #f4f4f9; }
-        .container { max-width: 800px; margin: auto; padding: 20px; background: #fff; border-radius: 8px; box-shadow: 0 0 20px rgba(0,0,0,0.1); }
-        h2 { color: #27ae60; text-align: center; }
-        p { font-size: 16px; line-height: 1.6; }
-        .highlight { background-color: #ffffcc; padding: 5px; border-radius: 5px; font-weight: bold; color: #e60000; }
-        .image-container { text-align: center; margin: 20px 0; }
-        .image-container img { width: 300px; border-radius: 8px; }
-        a { text-decoration: none; }
-    </style>
-</head>
-<body>
-    <div class="container">
-        <h2>Bioarthry - Control de Dolor Tópico</h2>
-        <p><strong>Efecto fisiológico:</strong> Antiinflamatorio, alivio del dolor, distensión muscular, analgésico.</p>
-        <p><strong>Acción fisiológica:</strong> El extracto de capsicum alivia diversos tipos de dolor neuropático.</p>
-        <h3>Ingredientes:</h3>
-        <ul>
-            <li>Capsicum</li>
-            <li>Condroitina</li>
-            <li>Canela</li>
-            <li>Aloe Vera</li>
-        </ul>
-        <p><strong>Posología:</strong> Aplicar sobre la zona afectada masajeando según indicación médica.</p>
-        <p><strong>Registro Sanitario:</strong> NSC50387-12CO</p>
-        <div class="image-container">
-            <a href="https://saludtogenesis.com/producto/bioarthry/" target="_blank">
-                <img src="BIOARTHRY.png" alt="Bioarthry">
-                <p class="highlight">¡CONOCE MÁS SOBRE BIOARTHRY AQUÍ!</p>
-            </a>
-        </div>
-    </div>
-</body>
-</html>
-
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="DLR30 - Propiedades Analgésicas y Antiinflamatorias Naturales">
-    <title>DLR30 - Control del Dolor y Antiinflamatorio</title>
-    <style>
-        body { font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: #f4f4f9; }
-        .container { max-width: 800px; margin: auto; padding: 20px; background: #fff; border-radius: 8px; box-shadow: 0 0 20px rgba(0,0,0,0.1); }
-        h2 { color: #27ae60; text-align: center; }
-        p { font-size: 16px; line-height: 1.6; }
-        .highlight { background-color: #ffffcc; padding: 5px; border-radius: 5px; font-weight: bold; color: #e60000; }
-        .image-container { text-align: center; margin: 20px 0; }
-        .image-container img { width: 300px; border-radius: 8px; }
-        a { text-decoration: none; }
-    </style>
-</head>
-<body>
-    <div class="container">
-        <h2>DLR30 - Propiedades Analgésicas y Antiinflamatorias</h2>
-        <p><strong>Efecto fisiológico:</strong> Propiedades analgésicas y antiinflamatorias naturales. Manejo del dolor.</p>
-        <p><strong>Acción fisiológica:</strong> El dolor articular y muscular es aliviado por extractos naturales de cúrcuma, manzanilla y jengibre que reducen inflamación y mejoran la circulación local.</p>
-        <h3>Ingredientes:</h3>
-        <ul>
-            <li>Zinc</li>
-            <li>Cúrcuma</li>
-            <li>Manzanilla</li>
-            <li>Jengibre</li>
-            <li>Canela</li>
-            <li>Aloe Vera</li>
-        </ul>
-        <p><strong>Posología:</strong> 2 cucharadas al día. Después del desayuno y de la cena.</p>
-        <p><strong>Registro Sanitario:</strong> RSA-00076720-2019 (Variedad 2)</p>
-        <div class="image-container">
-            <a href="https://capta.com.co/agustinangarita/producto/dlr-30-500ml/" target="_blank">
-                <img src="DLR30.png" alt="DLR30">
-                <p class="highlight">¡CONOCE MÁS SOBRE DLR30 AQUÍ!</p>
-            </a>
-        </div>
-    </div>
-</body>
-</html>
-
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Sinaldox - Fortalecimiento del Sistema Inmunológico">
-    <title>Sinaldox - Fortalecimiento Inmunológico</title>
-    <style>
-        body { font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: #f4f4f9; }
-        .container { max-width: 800px; margin: auto; padding: 20px; background: #fff; border-radius: 8px; box-shadow: 0 0 20px rgba(0,0,0,0.1); }
-        h2 { color: #27ae60; text-align: center; }
-        p { font-size: 16px; line-height: 1.6; }
-        .highlight { background-color: #ffffcc; padding: 5px; border-radius: 5px; font-weight: bold; color: #e60000; }
-        .image-container { text-align: center; margin: 20px 0; }
-        .image-container img { width: 300px; border-radius: 8px; }
-        a { text-decoration: none; }
-    </style>
-</head>
-<body>
-    <div class="container">
-        <h2>Sinaldox - Fortalecimiento del Sistema Inmunológico</h2>
-        <p><strong>Efecto fisiológico:</strong> Antienvejecimiento, antioxidante, regulador del sueño, mejora estados de ánimo, incremento de energía y potenciador del sistema inmunológico.</p>
-        <p><strong>Acción fisiológica:</strong> Sinaldox combina factores de crecimiento dérmico de la saliva con vitaminas y aminoácidos para optimizar la síntesis de glutatión, proteger células y mejorar la respuesta inmune.</p>
-        <h3>Ingredientes:</h3>
-        <ul>
-            <li>Zinc</li>
-            <li>Magnesio</li>
-            <li>Factor de crecimiento dérmico (saliva)</li>
-            <li>Vitaminas: B1, B2, B6, Biotina, Niacina, Vitamina C</li>
-            <li>Aminoácidos: Arginina, Lisina, Prolina, Glicina, Histidina, Cisteína, Alanina</li>
-        </ul>
-        <p><strong>Posología:</strong> 2 cucharadas al día, preferiblemente con agua.</p>
-        <p><strong>Registro Sanitario:</strong> RSAD19-007019 (Variedad 1)</p>
-        <div class="image-container">
-            <a href="https://capta.com.co/agustinangarita/producto/sinaldox-500ml/" target="_blank">
-                <img src="SINALDOX.png" alt="Sinaldox">
-                <p class="highlight">¡CONOCE MÁS SOBRE SINALDOX AQUÍ!</p>
-            </a>
-        </div>
-    </div>
-</body>
-</html>
-
-
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Prosan - Salud Sexual Masculina">
-    <title>Prosan - Salud Sexual Masculina</title>
-    <style>
-        body { font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: #f4f4f9; }
-        .container { max-width: 800px; margin: auto; padding: 20px; background: #fff; border-radius: 8px; box-shadow: 0 0 20px rgba(0,0,0,0.1); }
-        h2 { color: #c0392b; text-align: center; }
-        p { font-size: 16px; line-height: 1.6; }
-        .highlight { background-color: #ffe0e0; padding: 5px; border-radius: 5px; font-weight: bold; color: #b20000; }
-        .image-container { text-align: center; margin: 20px 0; }
-        .image-container img { width: 300px; border-radius: 8px; }
-        ul { padding-left: 20px; }
-        a { text-decoration: none; }
-    </style>
-</head>
-<body>
-    <div class="container">
-        <h2>Prosan - Salud Sexual Masculina</h2>
-        <p><strong>Efecto fisiológico:</strong> Coadyuvante natural en el manejo del agrandamiento prostático no maligno, oxigenador sexual y reengrasante natural.</p>
-        <p><strong>Acción fisiológica:</strong> Prosan contiene extractos naturales que ayudan en la salud de la próstata y el desempeño sexual masculino. Sus componentes bioactivos tienen propiedades antioxidantes, antiinflamatorias y vasodilatadoras que apoyan la función eréctil, mejoran la circulación sanguínea y la oxigenación de los tejidos, además de contribuir al equilibrio hormonal masculino.</p>
-        <h3>Ingredientes:</h3>
-        <ul>
-            <li>Achiote</li>
-            <li>Níspeto</li>
-            <li>Renglilz</li>
-            <li>Zanahoria</li>
-            <li>Calabaza</li>
-            <li>Licopeno</li>
-            <li>Magnesio</li>
-            <li>Zinc</li>
-        </ul>
-        <p><strong>Posología:</strong> 2 cucharadas al día. Después del desayuno y la cena.</p>
-        <p><strong>Contraindicaciones:</strong> Hipersensibilidad a alguno de los componentes.</p>
-        <p><strong>Registro Sanitario:</strong> RSAD-0009735-2019 variedad 5</p>
-        <div class="image-container">
-            <a href="https://es.wfp.org/publicaciones/prosan-modelo-de-gestion-para-la-mejora-de-la-nutricion" target="_blank">
-                <img src="PROSAN.png" alt="Prosan">
-                <p class="highlight">¡DESCUBRE TODO SOBRE PROSAN AQUÍ!</p>
-            </a>
-        </div>
-    </div>
-</body>
-</html>
-
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Braxim - Antiácido Natural">
-    <title>Braxim - Antiácido Natural</title>
-    <style>
-        body { font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: #f4f4f9; }
-        .container { max-width: 800px; margin: auto; padding: 20px; background: #fff; border-radius: 8px; box-shadow: 0 0 20px rgba(0,0,0,0.1); }
-        h2 { color: #3498db; text-align: center; }
-        p { font-size: 16px; line-height: 1.6; }
-        .highlight { background-color: #d0f0ff; padding: 5px; border-radius: 5px; font-weight: bold; color: #0077b6; }
-        .image-container { text-align: center; margin: 20px 0; }
-        .image-container img { width: 300px; border-radius: 8px; }
-        ul { padding-left: 20px; }
-        a { text-decoration: none; }
-    </style>
-</head>
-<body>
-    <div class="container">
-        <h2>Braxim - Antiácido Natural</h2>
-        <p><strong>Efecto fisiológico:</strong> Gastritis, reflujo, hiperacidez, pirosis.</p>
-        <p><strong>Acción fisiológica:</strong> La mezcla lograda aprovecha las cualidades nutricionales encontradas en la naturaleza para proporcionar un ambiente óptimo en nuestro sistema digestivo. Un grupo de extractos digestivos aparece como coenzimas que, al equilibrar el pH y eliminar moléstias especialmente en medios ácidos de vida, constituyen un aliado indispensable en la recuperación y restablecimiento del equilibrio digestivo. Los frutos que contiene, con gran variedad de enzimas digestivas, ayudan a mejorar la función enzimática y a generar un ambiente alcalino. En este sentido, la combinación de las enzimas vegetales y los mucílagos presentes en el producto, favorece la salud de nuestra sistema digestivo.</p>
-        <h3>Ingredientes:</h3>
-        <ul>
-            <li>Malta</li>
-            <li>Carica papaya</li>
-            <li>Piña</li>
-            <li>Vitamina C y E</li>
-            <li>Aloe vera</li>
-        </ul>
-        <p><strong>Posología:</strong> 2 cucharadas al día. Después del desayuno y la cena.</p>
-        <p><strong>Contraindicaciones y/o precauciones:</strong> Hipersensibilidad a alguno de los componentes.</p>
-        <p><strong>Registro Sanitario:</strong> RSAD12I286913</p>
-        <div class="image-container">
-            <a href="https://biobeefarmaceutica.com/producto/braxim/" target="_blank">
-                <img src="BRAXIM.png" alt="Braxim">
-                <p class="highlight">¡CONOCE MÁS SOBRE BRAXIM AQUÍ!</p>
-            </a>
-        </div>
-    </div>
-</body>
-</html>
-
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Cal 3.0 - Sistema Óseo">
-    <title>Cal 3.0 - Sistema Óseo</title>
-    <style>
-        body { font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: #f4f4f9; }
-        .container { max-width: 800px; margin: auto; padding: 20px; background: #fff; border-radius: 8px; box-shadow: 0 0 20px rgba(0,0,0,0.1); }
-        h2 { color: #e67e22; text-align: center; }
-        p { font-size: 16px; line-height: 1.6; }
-        .highlight { background-color: #fff3e0; padding: 5px; border-radius: 5px; font-weight: bold; color: #e65100; }
-        .image-container { text-align: center; margin: 20px 0; }
-        .image-container img { width: 300px; border-radius: 8px; }
-        ul { padding-left: 20px; }
-        a { text-decoration: none; }
-    </style>
-</head>
-<body>
-    <div class="container">
-        <h2>Cal 3.0 - Sistema Óseo</h2>
-        <p><strong>Efecto fisiológico:</strong> Fuente enriquecida y potenciada de calcio para fortalecimiento óseo y mejora de densidad ósea.</p>
-        <p><strong>Acción fisiológica:</strong> 
-            El mineral calcio ayuda a que sus músculos, nervios y células funcionen normalmente. 
-            Su cuerpo también necesita calcio, así como fósforo y vitamina D, para producir huesos saludables. 
-            Los huesos son el sitio principal de almacenamiento del calcio en el cuerpo. <br><br>
-            Su cuerpo no puede producir calcio. El calcio que el cuerpo necesita se obtiene únicamente de los alimentos o suplementos. 
-            Cuando no se consume suficiente calcio, el cuerpo lo toma de los huesos, lo que reduce su masa y debilita el tejido óseo. 
-            Este producto está diseñado con una combinación adecuada de calcio, fósforo, magnesio y vitamina D, con una base acuosa de alta absorción y sinérgica que mejora significativamente la biodisponibilidad del calcio en el organismo.
-        </p>
-        <h3>Ingredientes:</h3>
-        <ul>
-            <li>Calcio líquido</li>
-            <li>Magnesio</li>
-            <li>Fósforo</li>
-            <li>Vitamina D</li>
-        </ul>
-        <p><strong>Posología:</strong> Tres tomas diarias en un vaso con agua, preferiblemente con el estómago vacío (1 hora antes o 2 horas después de las comidas).</p>
-        <p><strong>Contraindicaciones y/o precauciones:</strong> Hipersensibilidad a alguno de los componentes.</p>
-        <p><strong>Registro Sanitario:</strong> RSAD12I391314</p>
-        <div class="image-container">
-            <a href="https://sanaste.co/products/cal-3-0?srsltid=AfmBOoq9iG4AzUIUZGrys7JgN15QOviArf-ATM_nbiiTgH1guIQAuy0L" target="_blank">
-                <img src="CAL 3.0.png" alt="Cal 3.0">
-                <p class="highlight"> !CONOCE MAS SOBRE MI AQUI!</p>
-            </a>
-        </div>
-    </div>
-</body>
-</html>
-
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="VitalLife - Regulador Metabólico">
-    <title>VitalLife - Regulador Metabólico</title>
-    <style>
-        body { font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: #f4f4f9; }
-        .container { max-width: 800px; margin: auto; padding: 20px; background: #fff; border-radius: 8px; box-shadow: 0 0 20px rgba(0,0,0,0.1); }
-        h2 { color: #9b59b6; text-align: center; }
-        p { font-size: 16px; line-height: 1.6; }
-        .highlight { background-color: #f8e9ff; padding: 5px; border-radius: 5px; font-weight: bold; color: #8e24aa; }
-        .image-container { text-align: center; margin: 20px 0; }
-        .image-container img { width: 300px; border-radius: 8px; }
-        ul { padding-left: 20px; }
-        a { text-decoration: none; }
-    </style>
-</head>
-<body>
-    <div class="container">
-        <h2>VitalLife - Regulador Metabólico</h2>
-        <p><strong>Efecto fisiológico:</strong> Ayuda a nivelar los niveles de glucosa (diabéticos) y a bajar de peso.</p>
-        <p><strong>Acción fisiológica:</strong> 
-            Su alto contenido en yacón y moringa ayudan a prevenir y tratar la diabetes, liberando el cuerpo del exceso de azúcar en la sangre. 
-            Ayuda a normalizar la glucosa y a controlar el funcionamiento insulínico. También ha mostrado gran efectividad como antioxidante y regulador de procesos biológicos. <br><br>
-            Su cuerpo está carente de FOS (fructooligosacáridos) que contiene el producto, son carbohidratos benéficos para la digestión, que permiten el desarrollo de flora intestinal saludable. 
-            En estudios científicos, se ha observado que estos prebióticos aumentan la absorción de minerales, controlan el apetito y mejoran el metabolismo de lípidos y azúcares. 
-            Gracias a la sinergia de sus ingredientes, ayuda en procesos de sobrepeso, obesidad y resistencia a la insulina. 
-            Es un producto de uso complementario que favorece la salud de los pacientes, incluso aquellos que han sido sometidos a intervenciones quirúrgicas por obesidad, ya que les ayuda a estabilizar sus constantes metabólicas durante el postoperatorio.
-        </p>
-        <h3>Ingredientes:</h3>
-        <ul>
-            <li>Ganoderma</li>
-            <li>Yacón</li>
-            <li>Moringa</li>
-        </ul>
-        <p><strong>Posología:</strong> 3 tomas diarias con los alimentos. Disolver una cucharada en un vaso con agua, 15 minutos antes de cada comida.</p>
-        <p><strong>Contraindicaciones y/o precauciones:</strong> Hipersensibilidad a alguno de los componentes.</p>
-        <p><strong>Registro Sanitario:</strong> RSAD08I4182016</p>
-        <div class="image-container">
-            <a href="https://vitalife.com.co/" target="_blank">
-                <img src="VITAL LIFE.png" alt="VitalLife">
-                <p class="highlight">¡CONOCE LOS BENEFICIOS METABÓLICOS DE VITALLIFE!</p>
-            </a>
-        </div>
-    </div>
-</body>
-</html>
-
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Sinaldox Kids - Fortalecimiento del Sistema Inmunológico Infantil">
-    <title>Sinaldox Kids - Sistema Inmunológico Infantil</title>
-    <style>
-        body { font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: #f4f4f9; }
-        .container { max-width: 800px; margin: auto; padding: 20px; background: #fff; border-radius: 8px; box-shadow: 0 0 20px rgba(0,0,0,0.1); }
-        h2 { color: #f1c40f; text-align: center; }
-        p { font-size: 16px; line-height: 1.6; }
-        .highlight { background-color: #fff9c4; padding: 5px; border-radius: 5px; font-weight: bold; color: #f39c12; }
-        .image-container { text-align: center; margin: 20px 0; }
-        .image-container img { width: 300px; border-radius: 8px; }
-        ul { padding-left: 20px; }
-        a { text-decoration: none; }
-    </style>
-</head>
-<body>
-    <div class="container">
-        <h2>Sinaldox Kids - Fortalecimiento del Sistema Inmunológico Infantil</h2>
-        <p><strong>Efecto fisiológico:</strong> 
-            Multivitamínico, multimineral y multiaminoácido para combatir carencias nutricionales, potenciar el sistema inmunológico y ayudar al óptimo desarrollo físico e intelectual de los niños. También colabora con la concentración y memoria, además de apoyar el tratamiento de enfermedades asociadas al sistema inmune.
-        </p>
-        <p><strong>Acción fisiológica:</strong> 
-            La infancia es un periodo crítico para el desarrollo de un número de funciones necesarias para una vida saludable. Sinaldox Kids proporciona los nutrientes esenciales que permiten el desarrollo adecuado del sistema inmune y del sistema nervioso central.
-            <br><br>
-            Su fórmula contiene una mezcla de vitaminas, minerales, aminoácidos y factores de crecimiento dérmico que permiten mejorar la respuesta inmune y proteger las células frente al daño oxidativo. Está diseñado para apoyar el desarrollo cognitivo, físico y metabólico de los niños en crecimiento.
-        </p>
-        <h3>Ingredientes:</h3>
-        <ul>
-            <li>Factor de crecimiento dérmico (saliva)</li>
-            <li>Vitaminas: B1, B2, B6, C, Niacina, Biotina</li>
-            <li>Aminoácidos: Arginina, Lisina, Prolina, Glicina, Histidina, Cisteína, Alanina</li>
-        </ul>
-        <p><strong>Posología:</strong> 2 cucharadas al día. Después del desayuno y cena.</p>
-        <p><strong>Contraindicaciones y/o precauciones:</strong> Hipersensibilidad a alguno de sus componentes.</p>
-        <p><strong>Registro Sanitario:</strong> RSAD07-670-2019 (Variedad 1)</p>
-        <div class="image-container">
-            <a href="https://www.instagram.com/saludtogenesis/p/Cvh7dkqAQsW/?img_index=1" target="_blank">
-                <img src="SINALDOX KIDS.png" alt="Sinaldox Kids">
-                <p class="highlight">conoce mas sobre mi</p>
-            </a>
-        </div>
-    </div>
-</body>
-</html>
-
-
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="DRHNAL - Sistema Urinario">
-    <title>DRHNAL - Sistema Urinario</title>
-    <style>
-        body { font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: #f4f4f9; }
-        .container { max-width: 800px; margin: auto; padding: 20px; background: #fff; border-radius: 8px; box-shadow: 0 0 20px rgba(0,0,0,0.1); }
-        h2 { color: #2980b9; text-align: center; }
-        p { font-size: 16px; line-height: 1.6; }
-        .highlight { background-color: #e8f4fd; padding: 5px; border-radius: 5px; font-weight: bold; color: #3498db; }
-        .image-container { text-align: center; margin: 20px 0; }
-        .image-container img { width: 300px; border-radius: 8px; }
-        ul { padding-left: 20px; }
-        a { text-decoration: none; }
-    </style>
-</head>
-<body>
-    <div class="container">
-        <h2>DRHNAL - Sistema Urinario</h2>
-        <p><strong>Efecto fisiológico:</strong> Cálculos renales, depuración renal, coadyuvante en el manejo de infecciones renales.</p>
-        
-        <p><strong>Acción fisiológica:</strong> 
-            Una combinación saludable del equilibrio de agua, sales y minerales en la sangre depende del buen funcionamiento renal. 
-            DRHNAL es un suplemento nutricional que brinda soporte al sistema urinario mediante una mezcla de extractos vegetales con efecto diurético, antiinflamatorio, antioxidante, y antimicrobiano.
-            <br><br>
-            La fórmula contiene ingredientes con propiedades comprobadas:
-        </p>
-        <ul>
-            <li><strong>Perejil:</strong> Potente diurético que contribuye a eliminar toxinas acumuladas y promueve la producción de orina.</li>
-            <li><strong>Albahaca:</strong> Su acción antibacteriana y calmante ayuda a relajar el tracto urinario y disminuir molestias asociadas a infecciones.</li>
-            <li><strong>Ruibarbo:</strong> Conocido por su efecto laxante suave, también apoya el sistema digestivo y depurativo.</li>
-            <li><strong>Cardamomo:</strong> Potente antioxidante que ayuda a reducir la inflamación renal.</li>
-            <li><strong>Tomillo:</strong> Rico en compuestos que inhiben el crecimiento bacteriano en el tracto urinario.</li>
-            <li><strong>Alcachofa:</strong> Estimula la producción de bilis y la eliminación de desechos, contribuyendo a la salud renal y hepática.</li>
-        </ul>
-
-        <h3>Ingredientes:</h3>
-        <ul>
-            <li>Perejil</li>
-            <li>Albahaca</li>
-            <li>Ruibarbo</li>
-            <li>Cardamomo</li>
-            <li>Tomillo</li>
-            <li>Alcachofa</li>
-        </ul>
-
-        <p><strong>Posología:</strong> 3 tomas diarias con los alimentos. Disolver una cucharada en un vaso con agua, 15 minutos antes de cada comida.</p>
-        <p><strong>Contraindicaciones y/o precauciones:</strong> Hipersensibilidad a alguno de los componentes.</p>
-        <p><strong>Registro Sanitario:</strong> RSAD09335-2019 (Variedad B)</p>
-        
-        <div class="image-container">
-            <a href="https://www.facebook.com/naturdia/posts/drhnal-tratamiento-ideal-para-problemas-de-c%C3%A1lculos-drenales-problemas-urinarios/1727542147577980/" target="_blank">
-                <img src="DRHNAL.png" alt="DRHNAL">
-                <p class="highlight">¡MIRAME AQUI EN OTRAS PAGINAS!</p>
-            </a>
-        </div>
-    </div>
-</body>
-</html>
-
-
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="FEMZ - Sistema Hormonal Femenino">
-    <title>FEMZ - Sistema Hormonal Femenino</title>
-    <style>
-        body { font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: #fdf2f8; }
-        .container { max-width: 800px; margin: auto; padding: 20px; background: #fff; border-radius: 8px; box-shadow: 0 0 20px rgba(0,0,0,0.1); }
-        h2 { color: #d63384; text-align: center; }
-        p { font-size: 16px; line-height: 1.6; }
-        .highlight { background-color: #fde8f0; padding: 5px; border-radius: 5px; font-weight: bold; color: #d63384; }
-        .image-container { text-align: center; margin: 20px 0; }
-        .image-container img { width: 300px; border-radius: 8px; }
-        ul { padding-left: 20px; }
-        a { text-decoration: none; }
-    </style>
-</head>
-<body>
-    <div class="container">
-        <h2>FEMZ - Sistema Hormonal Femenino</h2>
-        <p><strong>Efecto fisiológico:</strong> Reducción en los síntomas post menopáusicos, tratamiento del dolor menstrual, alivio de cólicos.</p>
-        
-        <p><strong>Acción fisiológica:</strong> 
-            Diferentes procesos fisiológicos durante la vida de la mujer están marcados por la disminución en la secreción de estrógenos. FEMZ ha sido desarrollado como una solución natural para mujeres que transitan por la menopausia o sufren desequilibrios hormonales.
-        </p>
-        
-        <ul>
-            <li>Su fórmula contiene compuestos bioactivos como isoflavonas de soya, fitoestrógenos naturales que ayudan a equilibrar el sistema hormonal.</li>
-            <li>Contribuye a reducir los sofocos, alteraciones del sueño, irritabilidad, y otros síntomas comunes de la menopausia.</li>
-            <li>Incluye extractos como aloe vera, manzanilla, albahaca y jengibre que apoyan la digestión, calman molestias y fortalecen la inmunidad.</li>
-            <li>Vitaminas esenciales que complementan la acción antioxidante y metabólica del producto.</li>
-            <li>El magnesio mejora el estado de ánimo y alivia el dolor menstrual gracias a su efecto relajante sobre el tejido muscular uterino.</li>
-        </ul>
-
-        <h3>Ingredientes:</h3>
-        <ul>
-            <li>Aloe vera</li>
-            <li>Manzanilla</li>
-            <li>Isoflavonas de soya</li>
-            <li>Albahaca</li>
-            <li>Jengibre</li>
-            <li>Magnesio</li>
-            <li>Vitaminas</li>
-        </ul>
-
-        <p><strong>Posología:</strong> Tomar 2 cucharadas (30 ml) al día.</p>
-        <p><strong>Registro Sanitario:</strong> RSAD10I0848-2020</p>
-
-        <div class="image-container">
-            <a href="https://articulo.mercadolibre.com.co/MCO-1413767339-fem-plus-3-cajas-90-sobres-_JM?matt_tool=19390127&utm_source=google_shopping&utm_medium=organic" target="_blank">
-                <img src="FEM3.png" alt="FEMZ">
-                <p class="highlight">¡MIRAME AQUI EN OTRAS PAGINAS!</p>
-            </a>
-        </div>
-    </div>
-</body>
-</html>
-
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Timol - Sistema Respiratorio">
-    <title>Timol - Sistema Respiratorio</title>
-    <style>
-        body { font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: #f0f9ff; }
-        .container { max-width: 800px; margin: auto; padding: 20px; background: #fff; border-radius: 8px; box-shadow: 0 0 20px rgba(0,0,0,0.1); }
-        h2 { color: #0077b6; text-align: center; }
-        p { font-size: 16px; line-height: 1.6; }
-        .highlight { background-color: #d0f0ff; padding: 5px; border-radius: 5px; font-weight: bold; color: #0077b6; }
-        .image-container { text-align: center; margin: 20px 0; }
-        .image-container img { width: 300px; border-radius: 8px; }
-        ul { padding-left: 20px; }
-        a { text-decoration: none; }
-    </style>
-</head>
-<body>
-    <div class="container">
-        <h2>Timol - Sistema Respiratorio</h2>
-        <p><strong>Efecto fisiológico:</strong> Apoyo en el manejo de síntomas respiratorios como tos, bronquitis y congestión. Refuerza el sistema respiratorio.</p>
-        
-        <p><strong>Acción fisiológica:</strong> 
-            Timol está formulado con extractos naturales que ayudan a desinflamar vías respiratorias, facilitar la expectoración, aliviar la tos seca e irritativa y fortalecer la inmunidad frente a infecciones respiratorias. Ideal como coadyuvante en cuadros respiratorios recurrentes.
-        </p>
-
-        <ul>
-            <li>El tomillo y el eucalipto actúan como expectorantes naturales y antimicrobianos.</li>
-            <li>La menta y el anís contribuyen a relajar la musculatura bronquial y aliviar la irritación de garganta.</li>
-            <li>Contiene vitamina C, que ayuda al fortalecimiento del sistema inmunológico.</li>
-        </ul>
-
-        <h3>Ingredientes:</h3>
-        <ul>
-            <li>Tomillo</li>
-            <li>Eucalipto</li>
-            <li>Menta</li>
-            <li>Anís</li>
-            <li>Vitamina C</li>
-        </ul>
-
-        <p><strong>Posología:</strong> Tomar 2 cucharadas diarias. Una después del desayuno y otra después de la cena.</p>
-        <p><strong>Registro Sanitario:</strong> [Completar con número si lo tienes]</p>
-
-        <div class="image-container">
-            <a href="https://www.drhealthpharma.com.co/tienda/sistema-respiratorio/timol-jarabe/" target="_blank">
-                <img src="TIMOL.png" alt="Timol">
-                <p class="highlight">¡MIRAME AQUI EN OTRAS PAGINAS!!</p>
-            </a>
-        </div>
-    </div>
-</body>
-</html>
-
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Cardol - Coadyuvante en Hipertensión y Problemas Circulatorios">
-    <title>Cardol - Coadyuvante en Hipertensión</title>
-    <style>
-        body { font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: #f4f4f9; }
-        .container { max-width: 800px; margin: auto; padding: 20px; background: #fff; border-radius: 8px; box-shadow: 0 0 20px rgba(0,0,0,0.1); }
-        h2 { color: #c0392b; text-align: center; }
-        p { font-size: 16px; line-height: 1.6; }
-        .highlight { background-color: #ffe0e0; padding: 5px; border-radius: 5px; font-weight: bold; color: #c0392b; }
-        .image-container { text-align: center; margin: 20px 0; }
-        .image-container img { width: 300px; border-radius: 8px; }
-        ul { padding-left: 20px; }
-        a { text-decoration: none; }
-    </style>
-</head>
-<body>
-    <div class="container">
-        <h2>Cardol - Coadyuvante en Hipertensión y Problemas Circulatorios</h2>
-        <p><strong>Efecto fisiológico:</strong> 
-            Coadyuvante en hipertensión y problemas circulatorios.
-        </p>
-        <p><strong>Acción fisiológica:</strong> 
-            CARDOL, mediante la acción nutracéutica de sus componentes, permite modificar factores de riesgo asociados con enfermedades del endotelio vascular y de paso los problemas circulatorios, como una estrategia de enfoque complementario.
-            <br><br>
-            Con el objetivo de reducir los niveles de estrés, de dolor, de radicales libres y mejorar el sistema inmune en adultos mayores, especialmente mayores de 60 años con antecedentes de enfermedad vascular, el efecto combinado de <strong>AJO</strong> permite relajar los vasos sanguíneos y mejorar la circulación. 
-            <br><br>
-            <strong>La CÚRCUMA</strong>, junto con otros ingredientes como la <strong>ALBAHACA</strong>, ha sido empleada en múltiples formas en la medicina tradicional. Estos fitonutrientes tienen propiedades antiinflamatorias, antioxidantes y vasodilatadoras, útiles para mejorar la función endotelial.
-        </p>
-        <p>Además, el <strong>ZINC</strong> es esencial para una buena salud cardiovascular. La <strong>VITAMINA C</strong> actúa como antioxidante protegiendo las células del daño oxidativo.</p>
-
-        <h3>Ingredientes:</h3>
-        <ul>
-            <li>Cúrcuma</li>
-            <li>Ajo</li>
-            <li>Albahaca</li>
-            <li>Zinc</li>
-            <li>Vitamina C</li>
-        </ul>
-
-        <p><strong>Posología:</strong> Tomar dos veces al día después de la comida.</p>
-        <p><strong>Registro Sanitario:</strong> RSAD-0010484-2020 Variedad 8</p>
-        <div class="image-container">
-            <a href="https://saludtogenesis.com/producto/cardol/" target="_blank">
-                <img src="cardol.png" alt="Cardol">
-                <p class="highlight">¡MIRAME AQUI EN OTRAS PAGINAS!</p>
-            </a>
-        </div>
-    </div>
-</body>
-</html>
-
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Zirocol Fibra Líquida - Tránsito Intestinal y Estreñimiento">
-    <title>Zirocol Fibra Líquida - Tránsito Intestinal</title>
-    <style>
-        body { font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: #f4f4f9; }
-        .container { max-width: 800px; margin: auto; padding: 20px; background: #fff; border-radius: 8px; box-shadow: 0 0 20px rgba(0,0,0,0.1); }
-        h2 { color: #2e3c92; text-align: center; }
-        p { font-size: 16px; line-height: 1.6; }
-        .highlight { background-color: #e0f0ff; padding: 5px; border-radius: 5px; font-weight: bold; color: #2e3c92; }
-        .image-container { text-align: center; margin: 20px 0; }
-        .image-container img { width: 300px; border-radius: 8px; }
-        ul { padding-left: 20px; }
-        a { text-decoration: none; color: #2e3c92; font-weight: bold; }
-    </style>
-</head>
-<body>
-    <div class="container">
-        <h2>Zirocol Fibra Líquida - Para el Tránsito Intestinal y Estreñimiento</h2>
-        <p><strong>Efecto fisiológico:</strong> 
-            Laxante y aumento en la motilidad del tránsito intestinal.
-        </p>
-        <p><strong>Acción fisiológica:</strong> 
-            <strong>PITAHAYA:</strong> Fruta rica en antioxidantes, vitamina C, betacarotenos y carotenoides. Ayuda a regular el tránsito intestinal, neutraliza los radicales libres, previene el daño celular y la inflamación. Además, contiene agua y posee tanto fibra vegetal como fibra soluble; sus semillas tienen efecto laxante.
-            <br><br>
-            <strong>PREBIÓTICO:</strong> Sustancias no digeribles que ayudan a la formación de ciertas bacterias beneficiosas en el intestino, mejorando su tránsito y reduciendo síntomas de estreñimiento.
-            <br><br>
-            <strong>INULINA:</strong> Fibra soluble en agua que estimula la actividad intestinal y favorece la microbiota, promoviendo la buena salud de la mucosa intestinal.
-        </p>
-
-        <h3>Ingredientes:</h3>
-        <ul>
-            <li>Pitahaya</li>
-            <li>Prebióticos</li>
-            <li>Inulina</li>
-        </ul>
-
-        <p><strong>Posología:</strong> 3 tomas diarias, según indicación médica.</p>
-        <p><strong>Registro Sanitario:</strong> RSA-0014544-2021</p>
-        
-        <div class="image-container">
-            <a href="https://www.facebook.com/naturdia/posts/zirocol-jarabe-a-base-de-pithaya-malta-y-prebi%C3%B3ticos-que-ayudan-a-prevenir-probl/1826064264392434/" target="_blank">
-                <img src="ZIROCOL.png" alt="Zirocol Fibra Líquida">
-                <p class="highlight">¡AYUDA NATURAL CONTRA EL ESTREÑIMIENTO CON ZIROCOL!</p>
-                <p>MIRA AQUI EL MISMO PRODUCTO EN OTRA PAGINA</p>
-            </a>
-        </div>
-    </div>
-</body>
-</html>
- 
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Glumastion - Antialérgico Natural">
-    <title>Glumastion - Antialérgico Natural</title>
-    <style>
-        body { font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: #f4f4f9; }
-        .container { max-width: 800px; margin: auto; padding: 20px; background: #fff; border-radius: 8px; box-shadow: 0 0 20px rgba(0,0,0,0.1); }
-        h2 { color: #f39c12; text-align: center; }
-        p { font-size: 16px; line-height: 1.6; }
-        .highlight { background-color: #fff3cd; padding: 5px; border-radius: 5px; font-weight: bold; color: #e67e22; }
-        .image-container { text-align: center; margin: 20px 0; }
-        .image-container img { width: 300px; border-radius: 8px; }
-        ul { padding-left: 20px; }
-        a { text-decoration: none; color: #f39c12; font-weight: bold; }
-    </style>
-</head>
-<body>
-    <div class="container">
-        <h2>Glumastion - Antialérgico Natural</h2>
-        <p><strong>Efecto fisiológico:</strong> 
-            Alivio de rinitis, urticaria, eccema, congestión nasal y alergias dermatológicas.
-        </p>
-        <p><strong>Acción fisiológica:</strong> 
-            Diversos estudios han correlacionado un gran número de reacciones alérgicas con la disminución de niveles de ácidos grasos poliinsaturados (DHA, EPA), los cuales tienen un rol importante en la modulación del sistema inmune.
-            <br><br>
-            Una buena parte de las enfermedades alérgicas, y en particular comunes, como la rinitis, urticaria, eccema, entre otras, pueden mejorar con el consumo de <strong>CURCUMA</strong>, gracias a su efecto antiinflamatorio y antioxidante. También el <strong>TÉ VERDE</strong> ayuda a disminuir la respuesta inflamatoria del sistema inmune.
-            <br><br>
-            Glumastion actúa como regulador de la respuesta inmunológica, disminuyendo la liberación de histamina y la expresión de ciertos factores de inflamación, lo que mejora los síntomas en personas con enfermedades alérgicas.
-        </p>
-
-        <h3>Ingredientes:</h3>
-        <ul>
-            <li>DHA</li>
-            <li>EPA</li>
-            <li>Cúrcuma</li>
-            <li>Té verde</li>
-            <li>Chía</li>
-            <li>Marañón</li>
-            <li>Almendras</li>
-        </ul>
-
-        <p><strong>Posología:</strong> 15 ml al día. Diluir en agua.</p>
-        <p><strong>Registro Sanitario:</strong> RSA-0015257-2019 (Variedad C)</p>
-
-        <div class="image-container">
-            <a href="https://saludtogenesis.com/producto/glumastion/" target="_blank">
-                <img src="GLUMASTION.png" alt="Glumastion">
-                <p class="highlight">¡MIRAME AQUI EN OTRA PAGINA!</p>
-            </a>
-        </div>
-    </div>
-</body>
-</html>
-
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Ceretil - Revitalizador Cerebral con Omega 3 y Colina">
-    <title>Ceretil - Revitalizador Cerebral</title>
-    <style>
-        body { font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: #f4f4f9; }
-        .container { max-width: 800px; margin: auto; padding: 20px; background: #fff; border-radius: 8px; box-shadow: 0 0 20px rgba(0,0,0,0.1); }
-        h2 { color: #2c3e50; text-align: center; }
-        p { font-size: 16px; line-height: 1.6; }
-        .highlight { background-color: #d6eaff; padding: 5px; border-radius: 5px; font-weight: bold; color: #2c3e50; }
-        .image-container { text-align: center; margin: 20px 0; }
-        .image-container img { width: 300px; border-radius: 8px; }
-        ul { padding-left: 20px; }
-        a { text-decoration: none; color: #2c3e50; font-weight: bold; }
-    </style>
-</head>
-<body>
-    <div class="container">
-        <h2>Ceretil - Revitalizador Cerebral</h2>
-        <p><strong>Acción fisiológica:</strong> 
-            La colina es un nutriente crítico para el desarrollo cognitivo, el metabolismo y la función hepática y la regulación del metabolismo de la homocisteína. Es necesaria para la síntesis de fosfatidilcolina, uno de los principales constituyentes de las membranas celulares. 
-            <br><br>
-            Es esencial en la formación de acetilcolina, un neurotransmisor clave para la memoria y el aprendizaje. Ceretil contiene omega 3 de origen vegetal, colina, almendras y arándano, lo que lo convierte en una bebida funcional con propiedades neuroprotectoras. Puede ayudar a mejorar la memoria, concentración y desempeño cognitivo, siendo útil en adultos mayores o personas con deterioro de la memoria relacionado con la edad.
-        </p>
-
-        <p><strong>Posología:</strong> 15 ml al día. Diluir en agua.</p>
-
-        <h3>Ingredientes destacados:</h3>
-        <ul>
-            <li>Omega 3</li>
-            <li>Colina</li>
-            <li>Almendras</li>
-            <li>Arándano</li>
-        </ul>
-
-        <div class="image-container">
-            <a href="https://sanaste.co/products/ceretil?srsltid=AfmBOor5lc4Yki7bMy7Xt1mYizPuo0L9Y9wn_TlT98QDl-_YA8MdNkcc">
-                <img src="CERETIL.png" alt="Ceretil Revitalizador Cerebral">
-                <p class="highlight">¡MIRAME AQUI EN OTRAS PAGINAS!</p>
-            </a>
-        </div>
-    </div>
-</body>
-</html>
-
-
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="CBD Biozen Oil - Manejo de Ansiedad, Dolor Crónico y Depresión">
-    <title>CBD Biozen Oil</title>
-    <style>
-        body { font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: #f4f4f9; }
-        .container { max-width: 800px; margin: auto; padding: 20px; background: #fff; border-radius: 8px; box-shadow: 0 0 20px rgba(0,0,0,0.1); }
-        h2 { color: #27ae60; text-align: center; }
-        p { font-size: 16px; line-height: 1.6; }
-        .highlight { background-color: #e0f8ec; padding: 5px; border-radius: 5px; font-weight: bold; color: #2ecc71; }
-        .image-container { text-align: center; margin: 20px 0; }
-        .image-container img { width: 300px; border-radius: 8px; }
-        ul { padding-left: 20px; }
-        a { text-decoration: none; color: #27ae60; font-weight: bold; }
-    </style>
-</head>
-<body>
-    <div class="container">
-        <h2>CBD Biozen Oil</h2>
-        <p><strong>Efecto fisiológico:</strong> 
-            Control para la ansiedad leve a moderada, manejo del dolor crónico, antioxidante neuroprotector y ayuda en el manejo de la depresión.
-        </p>
-        <p><strong>Acción fisiológica:</strong> 
-            Regulación fisiológica del sistema endocannabinoide mediante estimulación de receptores CB1 y CB2, modulando la actividad neuronal.
-        </p>
-
-        <h3>Ingredientes:</h3>
-        <ul>
-            <li>Vitamina D3</li>
-            <li>Vitamina E</li>
-            <li>Aceite de menta</li>
-        </ul>
-
-        <p><strong>Posología:</strong> 
-            <br>Dosis de habituación: Tomar 5 gotas sublingual 3 veces al día durante la primera semana. 
-            <br>Después de la primera semana, hacer aumentos de 10 a 15 o 20 gotas, 3 veces al día según los resultados esperados.
-        </p>
-        <p><strong>Registro Sanitario:</strong> NSOC10295-21CO</p>
-
-        <div class="image-container">
-            <a href="https://www.habibdroguerias.com/biozen-oil-vitamd3vitamecbd-10-x-30ml/p">
-                <img src="BIOZEN OIL.png" alt="CBD Biozen Oil">
-                <p class="highlight">¡MIRAME AQUI EN OTRAS PAGINAS!</p>
-            </a>
-        </div>
-    </div>
-</body>
-</html>
-
-
-
-
-          
-        
-       
-    <!-- SECCION CONTACTO-->
-    <section class="contacto" id="contacto">
-        <div class="contenido-seccion">
-            <h2 class="titulo-seccion">SI TE GUSTA ALGO </h2>
-            <h3>PONTE EN CONTACTO CONMIGO </h3>
-            <div class="fila">
-                <div class="col">
-                    <h2>
-                        <i class="fa-solid fa-phone"></i> TELEFONO
-                    </h2>
-                    <span class="info-contacto">
-                        +57: 3136880950
-                    </span>
-                </div>
-                <div class="col">
-                    <h2>
-                        <i class="fa-solid fa-envelope"></i> CORREO
-                    </h2>
-                    <span class="info-contacto">
-                        esmeguti27@gmail.com
-                    </span>
-                </div>
-                <div class="col">
-                    <h2>
-                        <i class="fa-solid fa-globe"></i> EMPRESA
-                    </h2>
-                    <span class="info-contacto">
-                       BIOZENSURE 
-                    </span>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <script  src="app.js">
-       
-    </script>
-</body>
-
-</html>
